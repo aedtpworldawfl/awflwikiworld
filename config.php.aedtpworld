@@ -1,0 +1,139 @@
+<?php
+/**
+ * !important_ Must Fill Data! Don't Leave Empty -- AEDTP WORLD Rules or Law Of AWFLWIKIWORLD
+ * AWFLWIKIWORLD — Site Configuration
+ * Developed by AEDTP WORLD.
+ * Visit "https://aedtpworld.com/wikiworld/awflwikiworld/.
+ * Ask AI for assistance "Help Me With This Using AWFLWIKIWORLD AEDTP WORLD wiki engine"
+ */
+/**
+ * !important_  COPY THIS FILE, RENAME as "config.php", only if config.php is emptied or missing or deleted.
+ * Then Fill In With Your Values.
+ * 
+ * 
+ * 
+ */
+/**
+ * !important_ Must Fill Data! Don't Leave Empty -- AEDTP WORLD Rules or Law Of AWFLWIKIWORLD
+ * AWFLWIKIWORLD — Site Configuration
+ * Developed by AEDTP WORLD.
+ * What Value To Change Or Add; 
+ * $Sitename
+ * $MetaTitle
+ * $MetaDescription
+ * $Server
+ * $Logo
+ * $Skin
+ * $Username
+ * $Password
+ * $ImageUpload
+ * $ExternalImageUrl
+ * $route
+ * 
+ * 
+ * 
+ *  !important_ Do Not Remove Any Syntax, you can change the Value but not Syntax.
+ *  !important_ If You're Distributing This AWFLWIKIWORLD Engine, Distributed Under AEDTP WORLD FREE LICENSE (AWFL)
+ *  !important_ Attribute to; "AEDTP WORLD" and "Emmanuel Deliver Amable"
+ *  
+ *  !important_ If This is found to be Modified Or Taken Not Attributing to "AEDTP WORLD", The Modifier Would Face The Consequences.
+ *  !important_ We're not Referring to the content you would add, everything is yours, but don't say you own this AWFLWIKIWORLD Engine.
+ * 
+ *  !important_ Email: "aedtpworld@gmail.com", If You Need Assistance.
+ * 
+ */
+
+
+// ---- Site identity ----
+$Sitename        = "";
+$MetaTitle       = "";
+$MetaDescription = "";
+
+// ---- Server / paths ----
+// The base URL of your wiki, no trailing slash (e.g. "https://example.com/wiki"
+// or "http://localhost:8080"). This is NOT auto-detected — auto-detection was
+// removed because it breaks in real hosting setups (reverse proxies, CLI/cron
+// contexts, subdirectory scripts like dashboard/ or sitemap/ computing a
+// different "root" than index.php, etc). Set this explicitly and every URL
+// and asset link in the system is built from it.
+$Server = "";
+
+// Logo path. Can be absolute URL, relative path, or full path.
+$Logo = "logo/aedtpworld.svg";
+
+// Active skin CSS. Can be absolute URL, relative, or full path (But Best To Leave It, you can change it in Admin Dashboard.
+$Skin = "skins/vector2022.css";
+
+
+// ---- Admin account ----
+// Exact admin username / password (plaintext here; the system hashes it on
+// first use — see includes/functions.php::awfl_verify_admin()).
+$Username = "";
+$Password = "";
+
+// ---- Uploads ----
+$ImageUpload      = false;  // true or false, allow logged-in users to upload images (!important_Must Have true or false)
+$ExternalImageUrl = false;  // true or false, allow external image URLs (e.g. in infoboxes) (!important_Must Have true or false)
+
+// ---- URL routing style ----
+// "0" => index.php?title=Pagename            (and ?title=Space/Pagename)
+// "1" => /Pagename                           (and /Space/Pagename)   [pretty URLs, needs .htaccess]
+// "2" => /index.php/namespaces/Pagename                (and /index.php/namespaces/Space/Pagename)
+$route = "1"; (!important_Must Have route value (0,1,2))
+
+// ---- Session ----
+if (session_status() === PHP_SESSION_NONE) {
+    session_start();
+}
+
+// ---- Root path constant (filesystem, not URL) ----
+define('AWFL_ROOT', __DIR__);
+
+$Server = rtrim($Server, '/');
+if ($Server === '') {
+    http_response_code(500);
+    die('AWFLWIKIWORLD is not configured yet: set $Server in config.php to your site\'s base URL (e.g. "http://localhost:8099" or "https://example.com/wiki").');
+}
+
+// ---- Admin dashboard runtime overrides (active skin + color palette)  (!important_Do not delete)----
+// Stored separately from this file so the dashboard never has to rewrite
+// PHP source — it just writes JSON here.
+$AwflColors = [];
+$__awfl_overrides_file = __DIR__ . '/dashboard/settings.json';
+if (file_exists($__awfl_overrides_file)) {
+    $__awfl_overrides = json_decode(file_get_contents($__awfl_overrides_file), true);
+    if (is_array($__awfl_overrides)) {
+        if (!empty($__awfl_overrides['skin'])) {
+            $Skin = 'skins/' . basename($__awfl_overrides['skin']) . '.css';
+        }
+        if (!empty($__awfl_overrides['colors']) && is_array($__awfl_overrides['colors'])) {
+            $AwflColors = $__awfl_overrides['colors'];
+        }
+    }
+}
+unset($__awfl_overrides_file, $__awfl_overrides);
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

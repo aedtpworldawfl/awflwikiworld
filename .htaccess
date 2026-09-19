@@ -1,0 +1,45 @@
+# AWFLWIKIWORLD — root .htaccess
+# Hides sensitive/raw data files and enables pretty URLs for $route "1" and "2".
+
+Options -Indexes
+DirectoryIndex index.php
+
+# ---- Block direct access to raw data & config ----
+<FilesMatch "\.(txt|json|log)$">
+    Require all denied
+</FilesMatch>
+
+# ---- Pretty URL rewriting for $route = "1" or "2" ----
+# Anything that isn't a real file/directory and isn't inside an asset
+# folder gets routed through index.php, which reads the real path from
+# PATH_INFO / REQUEST_URI. This also means requests like
+# /namespaces/Pagename are handled virtually by index.php and never
+# serve the raw .txt file straight off disk.
+<IfModule mod_rewrite.c>
+    RewriteEngine On
+    RewriteCond %{REQUEST_URI} !^/(assets|skins|images|logo)/
+    RewriteCond %{REQUEST_URI} !^/(includes|users|dashboard|allusers|sitemap)/
+    RewriteCond %{REQUEST_URI} !^/index\.php
+    RewriteCond %{REQUEST_FILENAME} !-f
+    RewriteCond %{REQUEST_FILENAME} !-d
+    RewriteRule ^(.*)$ index.php/$1 [L,QSA]
+</IfModule>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
