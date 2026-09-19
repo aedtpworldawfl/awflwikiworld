@@ -92,7 +92,7 @@ The engine is a small number of PHP scripts working together:
 ```
 $Server = "https://example.com/wiki";
 // or, for local testing:
-$Server = "http://localhost:8099";
+$Server = "https://aedtpworld.com/wikiworld//localhost:8099";
 ```
 
 
@@ -121,7 +121,7 @@ Anyone can:
 
 * Read any page.
 * Use the search box in the header to jump straight to a page by title.
-* Browse [Special:AllPages](http:/index.php?title=Special%3AAllPages) to see every page that exists.
+* Browse [Special:AllPages](https://aedtpworld.com/wikiworld/index.php?title=Special%3AAllPages) to see every page that exists.
 * Browse the image gallery at *allimages/index.php* — see every uploaded picture, in a 7-column grid or a sortable detail table, and use the **Copy link** / **Copy name** buttons on any image.
 * Browse the account directory at *allusers/index.php*.
 * Download any page as a **.txt** file (the raw AWFLWIKITEXT) or as a self-contained **.html** file (styled the same as the live page, so it looks right even opened offline).
@@ -133,7 +133,7 @@ Visitors cannot create pages, edit pages, or upload images — those require an 
 
 ### Creating an account
 
-Go to [Special:Register](http:/index.php?title=Special%3ARegister) and fill in a username, display name, email, password, and a security question and answer (used later for password recovery). Usernames must be 3–32 characters (letters, numbers, *-*, *_*, *.*), and the name **admin** is reserved. Once registered, log in at [Special:Login](http:/index.php?title=Special%3ALogin).
+Go to [Special:Register](https://aedtpworld.com/wikiworld/index.php?title=Special%3ARegister) and fill in a username, display name, email, password, and a security question and answer (used later for password recovery). Usernames must be 3–32 characters (letters, numbers, *-*, *_*, *.*), and the name **admin** is reserved. Once registered, log in at [Special:Login](https://aedtpworld.com/wikiworld/index.php?title=Special%3ALogin).
 
 ### Recovering a forgotten password
 
@@ -162,8 +162,8 @@ AWFLWIKITEXT is a small, MediaWiki-inspired markup language. All of it can be ty
 * Bulleted list: start a line with an asterisk and a space, like * An item.
 * Numbered list: start a line with a hash and a space, like # An item.
 * Paragraphs: leave a blank line between blocks of text — each block becomes its own paragraph automatically.
-* Internal link: [Page Name](http:/index.php?title=Page_Name), or [words to display instead](http:/index.php?title=Page_Name). A link to a page that does not exist yet is still shown, in a different style, so you can click it to create that page.
-* External link: [link text](http://example.com).
+* Internal link: [Page Name](https://aedtpworld.com/wikiworld/index.php?title=Page_Name), or [words to display instead](https://aedtpworld.com/wikiworld/index.php?title=Page_Name). A link to a page that does not exist yet is still shown, in a different style, so you can click it to create that page.
+* External link: [link text](https://aedtpworld.com/wikiworld//example.com).
 * Bare images: any line that is just an image filename or URL ending in *.jpg*, *.jpeg*, *.png*, *.gif*, *.svg* or *.webp* is automatically rendered as a picture, shown at 250 pixels wide.
 * Strikethrough: wrap text in two tildes, like ~~this~~ — for example, a ~~retired~~ feature name.
 * Inline code: wrap text in backticks, like `this` — for example, `config.php`.
@@ -178,7 +178,7 @@ AWFLWIKITEXT is a small, MediaWiki-inspired markup language. All of it can be ty
 ```
 , to show preformatted, monospaced text.
 
-This article uses every one of these formats at least once. For the full reference, with a worked example of each format side by side with its raw syntax, see [AWFLWIKITEXT](http:/index.php?title=AWFLWIKIWORLD/AWFLWIKITEXT).
+This article uses every one of these formats at least once. For the full reference, with a worked example of each format side by side with its raw syntax, see [AWFLWIKITEXT](https://aedtpworld.com/wikiworld/index.php?title=AWFLWIKIWORLD/AWFLWIKITEXT).
 
 ### Infoboxes
 
@@ -206,7 +206,7 @@ Rules:
 
 ### Uploading images
 
-If the admin has enabled uploads, any logged-in user can add a picture at [Special:Upload](http:/index.php?title=Special%3AUpload). Only **.jpg** and **.png** files are accepted. Once uploaded, an image can be referenced in any page (bare, or inside an infobox) just by its filename, for example *![](images/mypicture.jpg)*.
+If the admin has enabled uploads, any logged-in user can add a picture at [Special:Upload](https://aedtpworld.com/wikiworld/index.php?title=Special%3AUpload). Only **.jpg** and **.png** files are accepted. Once uploaded, an image can be referenced in any page (bare, or inside an infobox) just by its filename, for example *![](images/mypicture.jpg)*.
 
 ### Downloading and printing
 
@@ -231,7 +231,7 @@ Open the **Dashboard** link in the navigation bar (*dashboard/index.php*). It ha
 
 ### Managing users
 
-The [All users](http:/index.php?title=Special%3AAllPages) directory lists every account except the admin's own. Anyone can view it; only the admin sees extra controls per row to:
+The [All users](https://aedtpworld.com/wikiworld/index.php?title=Special%3AAllPages) directory lists every account except the admin's own. Anyone can view it; only the admin sees extra controls per row to:
 
 * **Rename** a user's username.
 * **Set** a new password for a user directly — no need to know their old one, since passwords are stored hashed.
@@ -288,16 +288,16 @@ Page titles can contain spaces when you type or link them — for example, *Budd
 * **Can I move my wiki to another server?** Yes — copy the whole folder, update *$Server* in *config.php* to the new address, and you are done.
 * **Can I change how the wiki looks without touching PHP?** Yes — skins are plain CSS files, created and switched from the Dashboard.
 * **What happens to a user's pages if their account is removed?** Nothing — page content is never tied to the account being present, so removing a user never deletes what they wrote.
-* **What if I delete an image by mistake?** As admin, open the "Deleted" tab in [All Images](http:/index.php?title=Special%3AAllPages) and restore it — deleted images go to a trash folder rather than being erased immediately.
+* **What if I delete an image by mistake?** As admin, open the "Deleted" tab in [All Images](https://aedtpworld.com/wikiworld/index.php?title=Special%3AAllPages) and restore it — deleted images go to a trash folder rather than being erased immediately.
 * **Can a regular user undo someone else's edit?** AWFLWIKIWORLD does not keep a version history for every user — only the admin's own latest edit to each page is tracked, in the Dashboard's History section, precisely so an admin can always restore their own last version.
 
 ## See Also
 
-* [Special:AllPages](http:/index.php?title=Special%3AAllPages)
-* [Special:Register](http:/index.php?title=Special%3ARegister)
-* [Special:Login](http:/index.php?title=Special%3ALogin)
-* [Special:Upload](http:/index.php?title=Special%3AUpload)
-* [AWFLWIKITEXT formatting reference](http:/index.php?title=AWFLWIKIWORLD/AWFLWIKITEXT)
+* [Special:AllPages](https://aedtpworld.com/wikiworld/index.php?title=Special%3AAllPages)
+* [Special:Register](https://aedtpworld.com/wikiworld/index.php?title=Special%3ARegister)
+* [Special:Login](https://aedtpworld.com/wikiworld/index.php?title=Special%3ALogin)
+* [Special:Upload](https://aedtpworld.com/wikiworld/index.php?title=Special%3AUpload)
+* [AWFLWIKITEXT formatting reference](https://aedtpworld.com/wikiworld/index.php?title=AWFLWIKIWORLD/AWFLWIKITEXT)
 
 # AWFLWIKITEXT
 
@@ -537,14 +537,14 @@ Link to another page on this wiki with double square brackets. Add a vertical ba
 
 
 ```
-[Page Name](http:/index.php?title=Page_Name)
-[words to display instead](http:/index.php?title=Page_Name)
+[Page Name](https://aedtpworld.com/wikiworld/index.php?title=Page_Name)
+[words to display instead](https://aedtpworld.com/wikiworld/index.php?title=Page_Name)
 ```
 
 
-Rendered: [AWFLWIKIWORLD](http:/index.php?title=AWFLWIKIWORLD/AWFLWIKIWORLD) — and a link to a page that doesn't exist yet, [like this one](http:/index.php?title=AWFLWIKIWORLD/Some_New_Page), is still shown, just styled differently, so clicking it lets you create that page.
+Rendered: [AWFLWIKIWORLD](https://aedtpworld.com/wikiworld/index.php?title=AWFLWIKIWORLD/AWFLWIKIWORLD) — and a link to a page that doesn't exist yet, [like this one](https://aedtpworld.com/wikiworld/index.php?title=AWFLWIKIWORLD/Some_New_Page), is still shown, just styled differently, so clicking it lets you create that page.
 
-To link into a namespace, include it in the title: [Namespace/Page Name](http:/index.php?title=Namespace/Page_Name). If the namespace doesn't already exist, following the link sends you home instead of creating it — only an admin can create a namespace, from the dashboard.
+To link into a namespace, include it in the title: [Namespace/Page Name](https://aedtpworld.com/wikiworld/index.php?title=Namespace/Page_Name). If the namespace doesn't already exist, following the link sends you home instead of creating it — only an admin can create a namespace, from the dashboard.
 
 ### External link
 
@@ -622,18 +622,18 @@ Sometimes you want to *show* AWFLWIKITEXT syntax as plain text instead of having
  text 
 ```
 
-* Internal link: [Page](http:/index.php?title=Page) or [Label](http:/index.php?title=Page)
+* Internal link: [Page](https://aedtpworld.com/wikiworld/index.php?title=Page) or [Label](https://aedtpworld.com/wikiworld/index.php?title=Page)
 * External link: [Label](https://url)
 * Bare image: a filename or URL ending in an image extension, on its own
 * Infobox: 
 * Escape/raw text: wrap in a `nowiki` tag pair
 
-Every format above is also used live, for real, throughout the [AWFLWIKIWORLD](http:/index.php?title=AWFLWIKIWORLD/AWFLWIKIWORLD) article — this page exists to explain each one on its own.
+Every format above is also used live, for real, throughout the [AWFLWIKIWORLD](https://aedtpworld.com/wikiworld/index.php?title=AWFLWIKIWORLD/AWFLWIKIWORLD) article — this page exists to explain each one on its own.
 
 ## See also
 
-* [AWFLWIKIWORLD](http:/index.php?title=AWFLWIKIWORLD/AWFLWIKIWORLD)
-* [Main Page](http:/index.php?title=Main_Page)
+* [AWFLWIKIWORLD](https://aedtpworld.com/wikiworld/index.php?title=AWFLWIKIWORLD/AWFLWIKIWORLD)
+* [Main Page](https://aedtpworld.com/wikiworld/index.php?title=Main_Page)
 
 
 # AWFLWIKIWORLD
@@ -716,7 +716,7 @@ The engine is a small number of PHP scripts working together:
 
 1. Copy the whole *wikiworld* folder onto your PHP 8.3 server, or into any folder you will run with PHP's built-in server for local testing.
 2. Open *config.php* in a text editor.
-3. Set **$Server** to the exact base URL you will use to reach the wiki — for example *https://example.com/wiki* or *http://localhost:8099*. This is not auto-detected; you must type it in, because auto-detection breaks on real hosting (reverse proxies, subfolders, and admin/sitemap pages living in subdirectories would each guess a different, wrong URL).
+3. Set **$Server** to the exact base URL you will use to reach the wiki — for example *https://example.com/wiki* or *https://aedtpworld.com/wikiworld//localhost:8099*. This is not auto-detected; you must type it in, because auto-detection breaks on real hosting (reverse proxies, subfolders, and admin/sitemap pages living in subdirectories would each guess a different, wrong URL).
 4. Set **$Sitename**, **$MetaTitle** and **$MetaDescription** to describe your wiki.
 5. Set **$Username** and **$Password** to your admin login.
 6. Choose an **$route** mode (explained below).
@@ -738,7 +738,7 @@ Anyone can:
 
 * Read any page.
 * Use the search box in the header to jump straight to a page by title.
-* Browse [Special:AllPages](http:/index.php?title=Special%3AAllPages) to see every page that exists.
+* Browse [Special:AllPages](https://aedtpworld.com/wikiworld/index.php?title=Special%3AAllPages) to see every page that exists.
 * Browse the image gallery at *allimages/index.php* — see every uploaded picture, in a 7-column grid or a sortable detail table, and use the **Copy link** / **Copy name** buttons on any image.
 * Browse the account directory at *allusers/index.php*.
 * Download any page as a **.txt** file (the raw AWFLWIKITEXT) or as a self-contained **.html** file (styled the same as the live page, so it looks right even opened offline).
@@ -750,7 +750,7 @@ Visitors cannot create pages, edit pages, or upload images — those require an 
 
 ### Creating an account
 
-Go to [Special:Register](http:/index.php?title=Special%3ARegister) and fill in a username, display name, email, password, and a security question and answer (used later for password recovery). Usernames must be 3–32 characters (letters, numbers, *-*, *_*, *.*), and the name **admin** is reserved. Once registered, log in at [Special:Login](http:/index.php?title=Special%3ALogin).
+Go to [Special:Register](https://aedtpworld.com/wikiworld/index.php?title=Special%3ARegister) and fill in a username, display name, email, password, and a security question and answer (used later for password recovery). Usernames must be 3–32 characters (letters, numbers, *-*, *_*, *.*), and the name **admin** is reserved. Once registered, log in at [Special:Login](https://aedtpworld.com/wikiworld/index.php?title=Special%3ALogin).
 
 ### Recovering a forgotten password
 
@@ -779,8 +779,8 @@ AWFLWIKITEXT is a small, MediaWiki-inspired markup language. All of it can be ty
 * Bulleted list: start a line with an asterisk and a space, like * An item.
 * Numbered list: start a line with a hash and a space, like # An item.
 * Paragraphs: leave a blank line between blocks of text — each block becomes its own paragraph automatically.
-* Internal link: [Page Name](http:/index.php?title=Page_Name), or [words to display instead](http:/index.php?title=Page_Name). A link to a page that does not exist yet is still shown, in a different style, so you can click it to create that page.
-* External link: [link text](http://example.com).
+* Internal link: [Page Name](https://aedtpworld.com/wikiworld/index.php?title=Page_Name), or [words to display instead](https://aedtpworld.com/wikiworld/index.php?title=Page_Name). A link to a page that does not exist yet is still shown, in a different style, so you can click it to create that page.
+* External link: [link text](https://aedtpworld.com/wikiworld//example.com).
 * Bare images: any line that is just an image filename or URL ending in *.jpg*, *.jpeg*, *.png*, *.gif*, *.svg* or *.webp* is automatically rendered as a picture, shown at 250 pixels wide.
 
 ### Infoboxes
@@ -809,7 +809,7 @@ Rules:
 
 ### Uploading images
 
-If the admin has enabled uploads, any logged-in user can add a picture at [Special:Upload](http:/index.php?title=Special%3AUpload). Only **.jpg** and **.png** files are accepted. Once uploaded, an image can be referenced in any page (bare, or inside an infobox) just by its filename, for example *![](images/mypicture.jpg)*.
+If the admin has enabled uploads, any logged-in user can add a picture at [Special:Upload](https://aedtpworld.com/wikiworld/index.php?title=Special%3AUpload). Only **.jpg** and **.png** files are accepted. Once uploaded, an image can be referenced in any page (bare, or inside an infobox) just by its filename, for example *![](images/mypicture.jpg)*.
 
 ### Downloading and printing
 
@@ -834,7 +834,7 @@ Open the **Dashboard** link in the navigation bar (*dashboard/index.php*). It ha
 
 ### Managing users
 
-The [All users](http:/index.php?title=Special%3AAllPages) directory lists every account except the admin's own. Anyone can view it; only the admin sees extra controls per row to:
+The [All users](https://aedtpworld.com/wikiworld/index.php?title=Special%3AAllPages) directory lists every account except the admin's own. Anyone can view it; only the admin sees extra controls per row to:
 
 * **Rename** a user's username.
 * **Set** a new password for a user directly — no need to know their old one, since passwords are stored hashed.
@@ -887,12 +887,12 @@ Page titles can contain spaces when you type or link them — for example, *Budd
 * **Can I move my wiki to another server?** Yes — copy the whole folder, update *$Server* in *config.php* to the new address, and you are done.
 * **Can I change how the wiki looks without touching PHP?** Yes — skins are plain CSS files, created and switched from the Dashboard.
 * **What happens to a user's pages if their account is removed?** Nothing — page content is never tied to the account being present, so removing a user never deletes what they wrote.
-* **What if I delete an image by mistake?** As admin, open the "Deleted" tab in [All Images](http:/index.php?title=Special%3AAllPages) and restore it — deleted images go to a trash folder rather than being erased immediately.
+* **What if I delete an image by mistake?** As admin, open the "Deleted" tab in [All Images](https://aedtpworld.com/wikiworld/index.php?title=Special%3AAllPages) and restore it — deleted images go to a trash folder rather than being erased immediately.
 * **Can a regular user undo someone else's edit?** AWFLWIKIWORLD does not keep a version history for every user — only the admin's own latest edit to each page is tracked, in the Dashboard's History section, precisely so an admin can always restore their own last version.
 
 ## See Also
 
-* [Special:AllPages](http:/index.php?title=Special%3AAllPages)
-* [Special:Register](http:/index.php?title=Special%3ARegister)
-* [Special:Login](http:/index.php?title=Special%3ALogin)
-* [Special:Upload](http:/index.php?title=Special%3AUpload)
+* [Special:AllPages](https://aedtpworld.com/wikiworld/index.php?title=Special%3AAllPages)
+* [Special:Register](https://aedtpworld.com/wikiworld/index.php?title=Special%3ARegister)
+* [Special:Login](https://aedtpworld.com/wikiworld/index.php?title=Special%3ALogin)
+* [Special:Upload](https://aedtpworld.com/wikiworld/index.php?title=Special%3AUpload)
