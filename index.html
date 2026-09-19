@@ -1,0 +1,1506 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>AWFLWIKIWORLD — AWFLWIKIWORLD — AEDTP WORLD</title>
+   <meta name="description" content="A free, open wiki world by AEDTP WORLD. Discover And Connect.">
+    <meta name="author" content="AEDTP WORLD">
+    <meta name="copyright" content="© AEDTP WORLD">
+    <meta name="keywords" content="AEDTP WORLD, AEDTP WORLD FREE LICENSE, AWFL, AWFLWIKIWORLD, WIKI, Discover And Connect">
+    <meta name="license" content="AEDTP WORLD FREE LICENSE (AWFL)">
+    <meta name="robots" content="index, follow">
+    <meta name="application-name" content="AWFLWIKIWORLD">
+    <link rel="canonical" href="https://aedtpworld.com/wikiworld">
+    <meta property="og:title" content="Dashboard — AWFLWIKIWORLD">
+    <meta property="og:description" content="A free, open wiki world by AEDTP WORLD. Discover And Connect.">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://aedtpworld.com/wikiworld">
+    <meta property="og:image" content="https://aedtpworld.com/wikiworld/logo/aedtpworld.svg">
+    <meta property="og:site_name" content="AWFLWIKIWORLD">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Dashboard — AWFLWIKIWORLD">
+    <meta name="twitter:description" content="A free, open wiki world by AEDTP WORLD. Discover And Connect.">
+    <meta name="twitter:image" content="https://aedtpworld.com/wikiworld/logo/aedtpworld.svg">
+    <link rel="icon" href="https://aedtpworld.com/wikiworld/logo/aedtpworld.svg">
+    <link rel="apple-touch-icon" href="https://aedtpworld.com/wikiworld/logo/aedtpworld.svg">
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Organization",
+      "name": "AWFLWIKIWORLD",
+      "logo": "https://aedtpworld.com/wikiworld/logo/aedtpworld.svg",
+      "alternateName": "AEDTP WORLD FREE LICENSE (AWFL)",
+      "url": "https://aedtpworld.com/wikiworld",
+      "description": "A free, open wiki world by AEDTP WORLD. Discover And Connect.",
+      "publisher": { "@type": "Organization", "name": "AWFLWIKIWORLD" },
+      "sameAs": [
+        "https://aedtpworld.com",
+        "https://youtube.com/@aedtpworld",
+        "https://www.crunchbase.com/organization/aedtpworld",
+        "https://soundbetter.com/profiles/636065-aedtp-world",
+        "https://www.f6s.com/aedtpworld"
+      ]
+    }
+    </script>
+
+<style>
+/* AWFLWIKIWORLD — assets/site.css
+   Default base layout. Skins (skins/*.css) load AFTER this file and may
+   override any of these rules; if no skin is active, these rules stand alone. */
+
+:root {
+    --awfl-header-bg: #202122;
+    --awfl-header-text: #ffffff;
+    --awfl-button-bg: #36c;
+    --awfl-button-text: #ffffff;
+    --awfl-page-text: #202122;
+    --awfl-link: #0645ad;
+    --awfl-link-visited: #0b0080;
+    --awfl-border: #a2a9b1;
+    --awfl-bg: #ffffff;
+    --awfl-content-bg: #ffffff;
+}
+
+* { box-sizing: border-box; }
+
+html, body {
+    margin: 0; padding: 0;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif;
+    color: var(--awfl-page-text);
+    background: var(--awfl-bg);
+    line-height: 1.6;
+}
+
+a { color: var(--awfl-link); text-decoration: none; }
+a:visited { color: var(--awfl-link-visited); }
+a:hover { text-decoration: underline; }
+
+.awfl-wrapper { min-height: 100vh; display: flex; flex-direction: column; }
+
+/* ---- Header ---- */
+.awfl-header {
+    background: var(--awfl-header-bg);
+    color: var(--awfl-header-text);
+}
+.awfl-header-inner {
+    max-width: 1200px; margin: 0 auto; padding: 8px 16px;
+    display: flex; align-items: center; gap: 16px; flex-wrap: wrap;
+}
+.awfl-logo-link { display: flex; align-items: center; gap: 8px; color: var(--awfl-header-text); }
+.awfl-logo { width: 40px !important; height: 40px !important; object-fit: contain; }
+.awfl-sitename { font-weight: 700; font-size: 1.15rem; color: var(--awfl-header-text); }
+.awfl-searchform { flex: 1; display: flex; min-width: 180px; max-width: 420px; }
+.awfl-searchform input { flex: 1; padding: 6px 10px; border: 1px solid var(--awfl-border); border-radius: 2px 0 0 2px; }
+.awfl-searchform button {
+    padding: 6px 12px; border: none; border-radius: 0 2px 2px 0;
+    background: var(--awfl-button-bg); color: var(--awfl-button-text); cursor: pointer;
+}
+.awfl-usernav { display: flex; gap: 12px; align-items: center; font-size: 0.9rem; flex-wrap: wrap; }
+.awfl-usernav a { color: var(--awfl-header-text); opacity: 0.9; }
+.awfl-usernav a:hover { opacity: 1; }
+.awfl-username { color: var(--awfl-header-text); font-weight: 600; }
+
+/* ---- Body / main content ---- */
+.awfl-body { flex: 1; max-width: 1200px; margin: 0 auto; width: 100%; padding: 24px 16px; }
+.awfl-main { background: var(--awfl-content-bg); }
+.awfl-narrow { max-width: 480px; margin: 0 auto; }
+
+.awfl-page-titlebar {
+    display: flex; justify-content: space-between; align-items: baseline; flex-wrap: wrap;
+    border-bottom: 1px solid var(--awfl-border); padding-bottom: 8px; margin-bottom: 16px; gap: 8px;
+}
+.awfl-page-titlebar h1 { margin: 0; }
+.awfl-space-tag {
+    font-size: 0.55em; vertical-align: middle; margin-left: 8px; padding: 2px 8px;
+    background: #eaecf0; border-radius: 10px; color: #54595d; font-weight: normal;
+}
+.awfl-protected-tag { background: #fef1d7; color: #8a6100; }
+.awfl-page-actions { display: flex; gap: 14px; font-size: 0.9rem; flex-wrap: wrap; align-items: center; }
+.awfl-danger-link { color: #d33; }
+
+.awfl-download-menu { position: relative; display: inline-block; }
+.awfl-download-toggle { cursor: pointer; }
+.awfl-download-list {
+    display: none; position: absolute; top: 100%; left: 0; z-index: 20; margin-top: 4px;
+    background: var(--awfl-content-bg, #fff); border: 1px solid var(--awfl-border, #a2a9b1);
+    border-radius: 4px; box-shadow: 0 2px 6px rgba(0,0,0,0.15); min-width: 100px; padding: 4px 0;
+}
+.awfl-download-menu.open .awfl-download-list { display: block; }
+.awfl-download-list a { display: block; padding: 6px 14px; white-space: nowrap; text-decoration: none; }
+.awfl-download-list a:hover { background: #eaecf0; }
+
+.awfl-article { font-size: 1rem; }
+.awfl-article h1, .awfl-article h2 { border-bottom: 1px solid var(--awfl-border); padding-bottom: 4px; }
+.awfl-article ul, .awfl-article ol { padding-left: 1.6em; }
+.awfl-article code, .awfl-visual-preview code {
+    background: #f3f3f3; border: 1px solid var(--awfl-border); border-radius: 3px;
+    padding: 0 4px; font-family: monospace; font-size: 0.9em;
+}
+.awfl-article pre, .awfl-visual-preview pre {
+    background: #f3f3f3; border: 1px solid var(--awfl-border); border-radius: 4px;
+    padding: 10px 12px; overflow-x: auto;
+}
+.awfl-article pre code, .awfl-visual-preview pre code { background: none; border: none; padding: 0; }
+.awfl-article blockquote, .awfl-visual-preview blockquote {
+    margin: 1em 0; padding: 4px 14px; border-left: 4px solid var(--awfl-border);
+    color: #54595d; font-style: italic;
+}
+.awfl-article mark, .awfl-visual-preview mark { background: #fff2a8; padding: 0 2px; }
+.awfl-article hr, .awfl-visual-preview hr { border: none; border-top: 1px solid var(--awfl-border); margin: 1.5em 0; }
+.awfl-article del, .awfl-article s, .awfl-visual-preview del, .awfl-visual-preview s { opacity: 0.75; }
+.awfl-article .awfl-nowiki, .awfl-visual-preview .awfl-nowiki {
+    background: #f3f3f3; border: 1px solid var(--awfl-border); border-radius: 3px;
+    padding: 0 4px; font-family: monospace; font-size: 0.9em; white-space: pre-wrap;
+}
+.awfl-missing { font-style: italic; color: #54595d; }
+
+/* ---- Infobox ---- */
+.infobox {
+    float: right; margin: 0 0 1em 1em; width: 280px; border: 1px solid var(--awfl-border);
+    border-collapse: collapse; background: #f8f9fa; font-size: 0.875rem;
+}
+.infobox th, .infobox td { border: 1px solid var(--awfl-border); padding: 6px 8px; text-align: left; vertical-align: top; }
+.infobox th { font-weight: bold; background: #eaecf0; width: 38%; }
+.infobox-title { background: #ccdcf0 !important; text-align: center !important; font-size: 1.1em; }
+.infobox-image { text-align: center; }
+.infobox-image img { width: 250px !important; height: auto; }
+.infobox-caption { font-size: 0.85em; color: #54595d; margin-top: 4px; }
+
+/* ---- Forms ---- */
+.awfl-form { display: flex; flex-direction: column; gap: 12px; margin: 16px 0; }
+.awfl-form label { display: flex; flex-direction: column; gap: 4px; font-size: 0.9rem; }
+.awfl-form input, .awfl-form select, .awfl-form textarea {
+    padding: 8px; border: 1px solid var(--awfl-border); border-radius: 3px; font: inherit;
+}
+.awfl-form button, button, .awfl-editor-actions button, .awfl-danger {
+    background: var(--awfl-button-bg); color: var(--awfl-button-text);
+    border: none; padding: 8px 16px; border-radius: 3px; cursor: pointer; font: inherit;
+}
+.awfl-danger { background: #d33; }
+.awfl-error { color: #d33; }
+.awfl-success { color: #14866d; }
+
+/* ---- Editor ---- */
+.awfl-editing-label { font-size: 0.5em; color: #54595d; margin-left: 10px; }
+.awfl-editor-toolbar { display: flex; gap: 6px; margin-bottom: 8px; flex-wrap: wrap; align-items: center; }
+.awfl-editor-toolbar button {
+    background: #f8f9fa; color: #202122; border: 1px solid var(--awfl-border);
+    padding: 6px 10px; border-radius: 3px; cursor: pointer;
+}
+.awfl-editor-toolbar .awfl-tab.active { background: var(--awfl-button-bg); color: #fff; }
+.awfl-toolbar-sep { width: 1px; height: 20px; background: var(--awfl-border); margin: 0 6px; }
+#awfl-wikitext { width: 100%; font-family: monospace; font-size: 0.95rem; padding: 10px; border: 1px solid var(--awfl-border); border-radius: 3px; }
+.awfl-visual-preview {
+    border: 1px solid var(--awfl-border); border-radius: 3px; padding: 14px; min-height: 300px;
+    background: #fff; cursor: text;
+}
+.awfl-visual-preview:focus { outline: 2px solid var(--awfl-button-bg); outline-offset: -1px; }
+.awfl-visual-preview img { max-width: 100%; }
+.awfl-editor-actions { margin-top: 10px; display: flex; gap: 10px; }
+
+/* ---- Lists / tables ---- */
+.awfl-pagelist { columns: 3; column-gap: 24px; }
+table.awfl-datatable { border-collapse: collapse; width: 100%; margin: 12px 0; }
+table.awfl-datatable th, table.awfl-datatable td { border: 1px solid var(--awfl-border); padding: 8px; text-align: left; }
+table.awfl-datatable th { background: #eaecf0; }
+table.awfl-datatable th a { color: inherit; }
+
+/* ---- Image gallery (allimages) ---- */
+.awfl-image-grid {
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+    gap: 12px;
+}
+.awfl-image-cell {
+    border: 1px solid var(--awfl-border); border-radius: 4px; padding: 6px;
+    display: flex; flex-direction: column; align-items: center; text-align: center;
+    background: #fff;
+}
+.awfl-image-cell img { width: 100%; aspect-ratio: 1/1; object-fit: cover; border-radius: 2px; }
+.awfl-image-name { font-size: 0.75rem; margin: 6px 0 4px; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; width: 100%; }
+.awfl-image-cell-actions { display: flex; flex-direction: column; gap: 4px; width: 100%; }
+.awfl-image-cell-actions button { font-size: 0.7rem; padding: 4px 6px; }
+@media (max-width: 1000px) { .awfl-image-grid { grid-template-columns: repeat(4, 1fr); } }
+@media (max-width: 600px) { .awfl-image-grid { grid-template-columns: repeat(2, 1fr); } }
+
+/* ---- Footer ---- */
+.awfl-footer { border-top: 1px solid var(--awfl-border); background: #f8f9fa; margin-top: 24px; }
+.awfl-footer-inner { max-width: 1200px; margin: 0 auto; padding: 16px; font-size: 0.85rem; color: #54595d; }
+.awfl-powered { display: flex; align-items: center; gap: 8px; margin-bottom: 6px; color: #54595d; }
+.awfl-powered img { width: 40px !important; height: 40px !important; object-fit: contain; }
+.awfl-footer-links { margin-bottom: 6px; }
+
+/* ---- Dashboard color rows ---- */
+.awfl-color-row { display: flex; align-items: center; gap: 10px; margin-bottom: 10px; }
+.awfl-color-row label { min-width: 160px; }
+.awfl-color-row input[type=text] { width: 100px; font-family: monospace; }
+
+/* ---- Responsive ---- */
+@media (max-width: 720px) {
+    .awfl-pagelist { columns: 1; }
+    .infobox { float: none; width: 100%; margin: 1em 0; }
+    .awfl-header-inner { flex-direction: column; align-items: stretch; }
+    .awfl-searchform { max-width: none; }
+}
+
+@media print {
+    .awfl-header, .awfl-footer, .awfl-page-actions, .awfl-usernav { display: none !important; }
+    .infobox { float: none; width: 100%; }
+}
+
+/* AWFLWIKIWORLD — skins/vector2022.css
+   Default skin, modeled after Wikipedia's Vector 2022. This is the
+   system default and cannot be deleted — only a custom copy may be
+   created and edited from the admin dashboard. */
+
+:root {
+    --awfl-header-bg: #ffffff;
+    --awfl-header-text: #202122;
+    --awfl-button-bg: #36c;
+    --awfl-button-text: #ffffff;
+    --awfl-page-text: #202122;
+    --awfl-link: #0645ad;
+    --awfl-link-visited: #0b0080;
+    --awfl-border: #a2a9b1;
+    --awfl-bg: #f8f9fa;
+    --awfl-content-bg: #ffffff;
+}
+
+.awfl-header {
+    background: var(--awfl-header-bg);
+    color: var(--awfl-header-text);
+    border-bottom: 1px solid var(--awfl-border);
+}
+.awfl-logo-link, .awfl-sitename { color: var(--awfl-header-text); }
+.awfl-usernav a { color: var(--awfl-link); opacity: 1; }
+
+.awfl-body {
+    background: var(--awfl-content-bg);
+    border: 1px solid var(--awfl-border);
+    border-top: none;
+    padding: 24px;
+}
+
+.awfl-main h1 {
+    font-family: Georgia, 'Linux Libertine', 'Times New Roman', serif;
+    font-weight: normal;
+    border-bottom: 1px solid var(--awfl-border);
+    padding-bottom: 6px;
+}
+
+.awfl-article { font-family: sans-serif; }
+
+
+</style>
+</head>
+<body>
+<div class="awfl-wrapper"><div class="awfl-body"><main class="awfl-main">
+<h1>AWFLWIKIWORLD</h1>
+<article class="awfl-article"><table class="infobox"><tr><th class="infobox-title" colspan="2">AWFLWIKIWORLD</th></tr><tr><td colspan="2" class="infobox-image"><img src="https://aedtpworld.com/icons/aedtpworld.png" alt="The AWFLWIKIWORLD logo" style="width:250px !important;height:auto;"><div class="infobox-caption">The AWFLWIKIWORLD logo</div></td></tr><tr><th>Developer</th><td>AEDTP WORLD</td></tr><tr><th>Type</th><td>Wiki engine</td></tr><tr><th>Interface style</th><td>MediaWiki / Vector 2022</td></tr><tr><th>Written in</th><td>PHP 8.3</td></tr><tr><th>License</th><td>AEDTP WORLD FREE LICENSE (AWFL)</td></tr><tr><th>Storage</th><td>Flat files (.txt pages, .json users/settings)</td></tr><tr><th>Default skin</th><td>vector2022</td></tr></table>
+<p><strong>AWFLWIKIWORLD</strong> is a self-contained, MediaWiki-style wiki engine built in plain PHP. It stores every page as a plain text file, every user as a JSON record, and every visual style as a CSS file — no database, no build step, no external dependencies. Copy the folder onto any PHP 8.3 server (or run it on localhost), fill in one configuration file, and you have a working wiki.</p>
+<p>This page explains what AWFLWIKIWORLD is, why it exists, how it is built, and how to use every part of it — as a visitor, as a registered user, and as the administrator.</p>
+<h2>What is AWFLWIKIWORLD</h2>
+<p>AWFLWIKIWORLD is a wiki platform: a website anyone (or anyone you allow) can read, and that logged-in users can create and edit pages on, using a simplified text markup called <strong>AWFLWIKITEXT</strong>. Pages are organized under a root namespace or grouped into named <em>spaces</em> (for example, a space called <em>Music</em> could hold a page <em>Music/Buddy DML</em>). Every page can carry an <strong>infobox</strong> — a small fact-table, the same idea as the boxes you see in the top-right corner of Wikipedia articles.</p>
+<p>Unlike most wiki software, AWFLWIKIWORLD keeps everything in ordinary files:</p>
+<ul>
+<li>Each wiki page is one <em>.txt</em> file containing raw AWFLWIKITEXT.</li>
+<li>Each user is one JSON record in <em>users/users.json</em>.</li>
+<li>Each visual theme is one <em>.css</em> file in <em>skins/</em>.</li>
+<li>Uploaded pictures are plain <em>.jpg</em>/<em>.png</em> files in <em>images/</em>.</li>
+</ul>
+<p>This makes the whole wiki easy to back up (copy the folder), easy to inspect (open any file in a text editor), and easy to move between a local computer and a live server.</p>
+<h2>Why AWFLWIKIWORLD</h2>
+<p>AWFLWIKIWORLD was built for people who want a Wikipedia-like knowledge base without running a database server, without installing a heavyweight CMS, and without losing control of their own content. Because every page is a plain text file:</p>
+<ul>
+<li>You can read or edit the raw content outside the wiki, with any text editor.</li>
+<li>You can move the wiki by copying a folder — no database export/import.</li>
+<li>You can inspect exactly what the system stores, since nothing is hidden inside binary tables.</li>
+<li>You still get the features people expect from a real wiki: accounts, page history for admin edits, protected pages, image galleries, sitemaps, and a skins system.</li>
+</ul>
+<h2>How it is Built (Architecture)</h2>
+<p>The engine is a small number of PHP scripts working together:</p>
+<ul>
+<li><strong>config.php</strong> — the single file every other script reads. It defines the site name, the site&#039;s own URL (<em>$Server</em>), the admin login, upload rules, and the URL style.</li>
+<li><strong>includes/functions.php</strong> — the engine room: user accounts, page storage, the AWFLWIKITEXT parser, image handling, and URL building all live here.</li>
+<li><strong>includes/header.php</strong> and <strong>includes/footer.php</strong> — the shared page frame (navigation bar, meta tags, footer) that every page includes.</li>
+<li><strong>index.php</strong> — the main controller. Almost every page you visit — viewing an article, logging in, editing, saving, downloading — passes through this one file.</li>
+<li><strong>dashboard/index.php</strong> — the admin control panel.</li>
+<li><strong>allusers/index.php</strong> and <strong>allimages/index.php</strong> — public directories of accounts and uploaded pictures.</li>
+<li><strong>sitemap/sitemap.php</strong> — builds the search-engine sitemap.</li>
+</ul>
+<h2>File Structure</h2>
+<ul>
+<li><em>index.php</em> — the interface every visitor loads.</li>
+<li><em>config.php</em> — site settings (see below).</li>
+<li><em>.htaccess</em> — hides raw data files (.txt, .json) from being downloaded directly, and enables pretty URLs.</li>
+<li><em>includes/header.php</em>, <em>includes/footer.php</em>, <em>includes/functions.php</em> — shared page frame and engine code.</li>
+<li><em>users/users.json</em> — every registered account (hashed passwords only).</li>
+<li><em>users/recover.php</em> — the &quot;forgot password&quot; page.</li>
+<li><em>assets/site.css</em>, <em>assets/site.js</em> — the default look and the editor toolbar script. These never change; skins layer on top of them.</li>
+<li><em>skins/vector2022.css</em> — the default skin. More skins can be added here.</li>
+<li><em>images/</em> — uploaded <em>.jpg</em>/<em>.png</em> files. <em>images/trash/</em> holds images an admin has deleted but not yet permanently removed.</li>
+<li><em>allusers/index.php</em> — public list of accounts.</li>
+<li><em>allimages/index.php</em> — public gallery of uploaded images.</li>
+<li><em>namespaces/{pagename}.txt</em> — a root-level article.</li>
+<li><em>namespaces/{space name}/{pagename}.txt</em> — an article inside a named space.</li>
+<li><em><img src="images/logo/aedtpworld.svg" style="width:250px !important;height:auto;" alt=""></em> — the default logo, used whenever <em>$Logo</em> is not overridden.</li>
+<li><em>dashboard/index.php</em> — the admin panel (skins, colors, pages, images).</li>
+<li><em>dashboard/history.json</em>, <em>dashboard/history.php</em> — the admin&#039;s own edit history.</li>
+<li><em>dashboard/protected.json</em> — the list of protected page titles.</li>
+<li><em>sitemap/sitemap.xml</em>, <em>sitemap/sitemap.php</em> — the generated sitemap and the script that builds it.</li>
+</ul>
+<h2>Getting Started (Installation)</h2>
+<ol>
+<li>Copy the whole <em>wikiworld</em> folder onto your PHP 8.3 server, or into any folder you will run with PHP&#039;s built-in server for local testing.</li>
+<li>Open <em>config.php</em> in a text editor.</li>
+<li>Set <strong>$Server</strong> to the exact base URL you will use to reach the wiki — for example <em>https://example.com/wiki</em> or <em>https://aedtpworld.com/wikiworld//localhost:8099</em>. This is not auto-detected; you must type it in, because auto-detection breaks on real hosting (reverse proxies, subfolders, and admin/sitemap pages living in subdirectories would each guess a different, wrong URL).</li>
+<li>Set <strong>$Sitename</strong>, <strong>$MetaTitle</strong> and <strong>$MetaDescription</strong> to describe your wiki.</li>
+<li>Set <strong>$Username</strong> and <strong>$Password</strong> to your admin login.</li>
+<li>Choose an <strong>$route</strong> mode (explained below).</li>
+<li>Visit <em>$Server/index.php</em> in a browser. You should see the built-in Main Page.</li>
+</ol>
+<p>If you see a message saying the wiki &quot;is not configured yet,&quot; it means <em>$Server</em> is still blank in <em>config.php</em> — fill it in and reload.</p>
+<h3>The $route modes</h3>
+<p><em>$route</em> controls the shape of every page&#039;s URL:</p>
+<ul>
+<li><strong>&quot;0&quot;</strong> — <em>{$Server}/index.php?title=Pagename</em> (and <em>?title=Space/Pagename</em>). Works everywhere, no server configuration needed. This is the default.</li>
+<li><strong>&quot;1&quot;</strong> — <em>{$Server}/Pagename</em> (and <em>{$Server}/Space/Pagename</em>). Pretty URLs. Requires the supplied <em>.htaccess</em> and an Apache server with <em>mod_rewrite</em> and <em>AllowOverride All</em>.</li>
+<li><strong>&quot;2&quot;</strong> — <em>{$Server}/namespaces/Pagename</em>. Looks like a direct link into the <em>namespaces/</em> folder, but is still served by <em>index.php</em> — the <em>.htaccess</em> rules stop anyone from downloading the raw <em>.txt</em> file directly.</li>
+</ul>
+<h2>Using AWFLWIKIWORLD as a Visitor (not logged in)</h2>
+<p>Anyone can:</p>
+<ul>
+<li>Read any page.</li>
+<li>Use the search box in the header to jump straight to a page by title.</li>
+<li>Browse <a class="wiki-link new" href="https://aedtpworld.com/wikiworld/index.php?title=Special%3AAllPages">Special:AllPages</a> to see every page that exists.</li>
+<li>Browse the image gallery at <em>allimages/index.php</em> — see every uploaded picture, in a 7-column grid or a sortable detail table, and use the <strong>Copy link</strong> / <strong>Copy name</strong> buttons on any image.</li>
+<li>Browse the account directory at <em>allusers/index.php</em>.</li>
+<li>Download any page as a <strong>.txt</strong> file (the raw AWFLWIKITEXT) or as a self-contained <strong>.html</strong> file (styled the same as the live page, so it looks right even opened offline).</li>
+<li>Print any page (which also lets you &quot;print to PDF&quot; from the browser&#039;s print dialog).</li>
+</ul>
+<p>Visitors cannot create pages, edit pages, or upload images — those require an account.</p>
+<h2>Using AWFLWIKIWORLD as a Registered User</h2>
+<h3>Creating an account</h3>
+<p>Go to <a class="wiki-link new" href="https://aedtpworld.com/wikiworld/index.php?title=Special%3ARegister">Special:Register</a> and fill in a username, display name, email, password, and a security question and answer (used later for password recovery). Usernames must be 3–32 characters (letters, numbers, <em>-</em>, <em>_</em>, <em>.</em>), and the name <strong>admin</strong> is reserved. Once registered, log in at <a class="wiki-link new" href="https://aedtpworld.com/wikiworld/index.php?title=Special%3ALogin">Special:Login</a>.</p>
+<h3>Recovering a forgotten password</h3>
+<p>Open <em>users/recover.php</em>. You will be asked for your username, then your registration email and your security answer. If everything matches, you are immediately allowed to set a brand-new password — no email link required. Passwords and security answers are never stored in plain text; only their hashes are kept, so recovery always works by re-checking your answer, never by revealing the old password.</p>
+<h3>Creating and editing pages</h3>
+<p>To create a page, search for or navigate to its title and click <strong>Create</strong>. To edit an existing page, click <strong>Edit</strong>. Both open the same editor:</p>
+<ul>
+<li>A <strong>toolbar</strong> with <strong>B</strong> (bold), <strong>I</strong> (italic), <strong>U</strong> (underline), <strong>P</strong> (paragraph break), <strong>List</strong> (bulleted list) and <strong>Infobox</strong> (inserts a ready-made infobox template) — each wraps or inserts AWFLWIKITEXT around your current text selection.</li>
+<li>A <strong>source editor</strong>, the plain text box where the raw AWFLWIKITEXT lives.</li>
+<li>A <strong>visual editor (preview)</strong> tab, which sends your current text to the server and shows exactly how it will render, without saving anything yet.</li>
+</ul>
+<p>Click <strong>Save page</strong> to publish your changes immediately.</p>
+<p><strong>Note on protected pages:</strong> if an admin has protected a page, only an admin can edit it — the Edit link disappears (or is blocked server-side even if requested directly) for everyone else.</p>
+<h3>AWFLWIKITEXT — the markup language</h3>
+<p>AWFLWIKITEXT is a small, MediaWiki-inspired markup language. All of it can be typed by hand or inserted with the editor toolbar:</p>
+<ul>
+<li><strong>Bold</strong>: wrap text in three apostrophes, like <span class="awfl-nowiki">&#039;&#039;&#039;this&#039;&#039;&#039;</span>.</li>
+<li><em>Italic</em>: wrap text in two apostrophes, like <span class="awfl-nowiki">&#039;&#039;this&#039;&#039;</span>.</li>
+<li>Underline: wrap text in two underscores, like <span class="awfl-nowiki">__this__</span>.</li>
+<li>Headings: surround a line with two to six equals signs, like <span class="awfl-nowiki">== A Heading ==</span> (more equals signs make a smaller heading).</li>
+<li>Bulleted list: start a line with an asterisk and a space, like <span class="awfl-nowiki">* An item</span>.</li>
+<li>Numbered list: start a line with a hash and a space, like <span class="awfl-nowiki"># An item</span>.</li>
+<li>Paragraphs: leave a blank line between blocks of text — each block becomes its own paragraph automatically.</li>
+<li>Internal link: <span class="awfl-nowiki">[[Page Name]]</span>, or <span class="awfl-nowiki">[[Page Name|words to display instead]]</span>. A link to a page that does not exist yet is still shown, in a different style, so you can click it to create that page.</li>
+<li>External link: <span class="awfl-nowiki">[https://aedtpworld.com/wikiworld//example.com link text]</span>.</li>
+<li>Bare images: any line that is just an image filename or URL ending in <em>.jpg</em>, <em>.jpeg</em>, <em>.png</em>, <em>.gif</em>, <em>.svg</em> or <em>.webp</em> is automatically rendered as a picture, shown at 250 pixels wide.</li>
+</ul>
+<h3>Infoboxes</h3>
+<p>An infobox is a small fact-table, usually shown floated at the top right of an article — exactly like the one at the top of this page. Write one like this:</p>
+<p><span class="awfl-nowiki">&lt;infobox&gt;
+|title=Subject Name|
+|image=some-picture.jpg|
+|caption=A short caption for the picture|
+|Born=1 January 2000|
+|Occupation=Example, Example|
+|anything=you like|
+&lt;/infobox&gt;</span></p>
+<p>Rules:</p>
+<ul>
+<li><strong>title</strong>, <strong>image</strong> and <strong>caption</strong> are each allowed only <strong>once</strong> per infobox, and always appear in that fixed order — title first, then the image, then the caption underneath it — no matter where you typed them in the block.</li>
+<li>Every other line becomes its own row: the part before the equals sign is shown in <strong>bold</strong> as the row&#039;s label, and the part after it is the value. You can add as many of these as you like, and they appear in the exact order you wrote them.</li>
+<li><strong>image</strong> turns any filename or link ending in an image extension into a real picture, shown at 250 pixels wide.</li>
+<li><strong>caption</strong> is shown under the picture and used as its alt text.</li>
+<li>Outside of an infobox, ordinary images placed directly in the page text are also shown at 250 pixels wide by default.</li>
+</ul>
+<h3>Uploading images</h3>
+<p>If the admin has enabled uploads, any logged-in user can add a picture at <a class="wiki-link new" href="https://aedtpworld.com/wikiworld/index.php?title=Special%3AUpload">Special:Upload</a>. Only <strong>.jpg</strong> and <strong>.png</strong> files are accepted. Once uploaded, an image can be referenced in any page (bare, or inside an infobox) just by its filename, for example <em><img src="images/mypicture.jpg" style="width:250px !important;height:auto;" alt=""></em>.</p>
+<h3>Downloading and printing</h3>
+<p>Every page offers:</p>
+<ul>
+<li><strong>Download .txt</strong> — the raw AWFLWIKITEXT, exactly as stored.</li>
+<li><strong>Download .html</strong> — a single, self-contained HTML file with the page&#039;s styling embedded in it, so it looks right even with no internet connection.</li>
+<li><strong>Print / PDF</strong> — opens your browser&#039;s print dialog, which on most browsers can also &quot;print&quot; straight to a PDF file.</li>
+</ul>
+<h2>Using AWFLWIKIWORLD as the Administrator</h2>
+<p>Log in with the <strong>$Username</strong> / <strong>$Password</strong> set in <em>config.php</em>. The admin account is not a row in <em>users/users.json</em> — it is defined directly in the configuration file and always has full control.</p>
+<h3>The Dashboard</h3>
+<p>Open the <strong>Dashboard</strong> link in the navigation bar (<em>dashboard/index.php</em>). It has four sections:</p>
+<ul>
+<li><strong>Skins</strong> — pick which skin is active site-wide, or create a brand-new skin by typing its CSS. The default <strong>vector2022</strong> skin can be selected but never edited or deleted; create a new skin instead if you want to change the look.</li>
+<li><strong>Colors</strong> — a small palette for the site&#039;s core colors (header background, header text, buttons, button text, wiki page text, and links). Pick a color visually or type a hex code directly; the change applies across the whole wiki immediately, on top of whichever skin is active.</li>
+<li><strong>Pages</strong> — a list of every page, with a delete button per page and a &quot;Delete all pages&quot; button. This is also where you can trigger the sitemap to regenerate on demand.</li>
+<li><strong>Images</strong> — every uploaded image, with a delete button per image.</li>
+</ul>
+<h3>Managing users</h3>
+<p>The <a class="wiki-link new" href="https://aedtpworld.com/wikiworld/index.php?title=Special%3AAllPages">All users</a> directory lists every account except the admin&#039;s own. Anyone can view it; only the admin sees extra controls per row to:</p>
+<ul>
+<li><strong>Rename</strong> a user&#039;s username.</li>
+<li><strong>Set</strong> a new password for a user directly — no need to know their old one, since passwords are stored hashed.</li>
+<li><strong>Remove</strong> a user entirely. Removing a user deletes their account record, but <strong>never</strong> deletes the pages or edits they made — those stay exactly as they are.</li>
+</ul>
+<p>The admin account can never remove itself. A regular user can remove their own account at any time (through the admin, since only the admin can perform removals) and, likewise, their past contributions are kept.</p>
+<h3>Managing images (All Images)</h3>
+<p><em>allimages/index.php</em> is visible to everyone, but the admin sees more:</p>
+<ul>
+<li><strong>Content view</strong> — a seven-column grid of thumbnails, each with <strong>Copy link</strong> and <strong>Copy file name</strong> buttons.</li>
+<li><strong>Detail view</strong> — a sortable table (click any column heading to sort ascending or descending) showing file name, extension, size, and upload date. Everyone gets these four columns; the admin gets a fifth column of checkboxes.</li>
+<li>As admin, above the table you get <strong>Delete selected</strong> (moves the chosen images to <em>images/trash/</em> rather than erasing them outright), <strong>Restore selected</strong> (only shown while viewing the &quot;Deleted&quot; tab, moves images back out of the trash), and <strong>Rename selected</strong> (type a new name into the box next to each checked row, then click to apply).</li>
+</ul>
+<h3>Page protection</h3>
+<p>Every page has a <strong>Protect</strong> button, visible only to the admin. Protecting a page means only the admin can edit it from then on — anyone else who tries (even by submitting the edit form directly) is blocked with a clear message. Clicking <strong>Unprotect</strong> opens editing back up to every logged-in user. Only the admin can protect or unprotect a page.</p>
+<h3>Admin edit history</h3>
+<p>Every time the <strong>admin</strong> saves a page, AWFLWIKIWORLD quietly records that exact content in <em>dashboard/history.json</em> — the page&#039;s name, its filename, its space (if any), the date, and the full text. This history holds only the <strong>one latest</strong> admin edit for each page; saving the same page again simply updates that one record rather than creating a new one.</p>
+<p>Open <strong>History</strong> in the navigation bar (admin only) to see every recorded page, sortable by any column. Two actions are available, both requiring on-screen confirmation:</p>
+<ul>
+<li><strong>Delete selected</strong> — permanently removes the chosen history record(s).</li>
+<li><strong>Restore selected</strong> — writes the saved content straight back to the live page, overwriting whatever is there now. This is most useful after a regular user&#039;s edit has changed a page the admin had previously written, since only admin saves are tracked — restoring brings the admin&#039;s version back.</li>
+</ul>
+<h3>Sitemap generation</h3>
+<p><em>sitemap/sitemap.php</em> builds a search-engine sitemap of every page. If the list of pages would make a single file larger than roughly 1&amp;nbsp;megabyte, it is automatically split into several files (<em>sitemap-1.xml</em>, <em>sitemap-2.xml</em>, and so on), and <em>sitemap.xml</em> is (re)written as an index that lists every split file. It also writes <em>robots.txt</em> pointing at that index. Because search engines crawl an index and then follow every entry inside it automatically, submitting the single <em>sitemap.xml</em> address once is enough — you never need to resubmit each split by hand.</p>
+<h2>Namespaces and Spaces</h2>
+<p>A page can live at the root (<em>namespaces/Pagename.txt</em>) or inside a named space (<em>namespaces/Space Name/Pagename.txt</em>), written and linked as <em>Space Name/Pagename</em>. Spaces are a simple way to group related pages, the same way a folder groups related files.</p>
+<h2>Title Handling</h2>
+<p>Page titles can contain spaces when you type or link them — for example, <em>Buddy DML</em>. Behind the scenes, AWFLWIKIWORLD always <strong>stores and links</strong> that page using underscores instead of spaces (<em>Buddy_DML.txt</em>, linked as <em>Buddy_DML</em>), while still <strong>displaying</strong> the title with spaces wherever it is shown to a reader. This matches how MediaWiki itself handles titles, and it means links, downloads and file names never contain raw spaces.</p>
+<h2>Security Notes</h2>
+<ul>
+<li>Passwords and security-question answers are never stored as plain text — only their one-way hashes are kept in <em>users/users.json</em>.</li>
+<li>The supplied <em>.htaccess</em> blocks direct web access to every raw <em>.txt</em> and <em>.json</em> file, so page content and account records can never be downloaded straight off the server by guessing a URL — they can only be reached through the wiki&#039;s own pages.</li>
+<li>Only the admin can delete users, delete or protect pages, change the skin or colors, or manage images and history.</li>
+</ul>
+<h2>Frequently Asked Questions</h2>
+<ul>
+<li><strong>Do I need a database?</strong> No. Everything is stored in plain text and JSON files.</li>
+<li><strong>Can I move my wiki to another server?</strong> Yes — copy the whole folder, update <em>$Server</em> in <em>config.php</em> to the new address, and you are done.</li>
+<li><strong>Can I change how the wiki looks without touching PHP?</strong> Yes — skins are plain CSS files, created and switched from the Dashboard.</li>
+<li><strong>What happens to a user&#039;s pages if their account is removed?</strong> Nothing — page content is never tied to the account being present, so removing a user never deletes what they wrote.</li>
+<li><strong>What if I delete an image by mistake?</strong> As admin, open the &quot;Deleted&quot; tab in <a class="wiki-link new" href="https://aedtpworld.com/wikiworld/index.php?title=Special%3AAllPages">All Images</a> and restore it — deleted images go to a trash folder rather than being erased immediately.</li>
+<li><strong>Can a regular user undo someone else&#039;s edit?</strong> AWFLWIKIWORLD does not keep a version history for every user — only the admin&#039;s own latest edit to each page is tracked, in the Dashboard&#039;s History section, precisely so an admin can always restore their own last version.</li>
+</ul>
+<h2>See Also</h2>
+<ul>
+<li><a class="wiki-link new" href="https://aedtpworld.com/wikiworld/index.php?title=Special%3AAllPages">Special:AllPages</a></li>
+<li><a class="wiki-link new" href="https://aedtpworld.com/wikiworld/index.php?title=Special%3ARegister">Special:Register</a></li>
+<li><a class="wiki-link new" href="https://aedtpworld.com/wikiworld/index.php?title=Special%3ALogin">Special:Login</a></li>
+<li><a class="wiki-link new" href="https://aedtpworld.com/wikiworld/index.php?title=Special%3AUpload">Special:Upload</a></li>
+</ul></article>
+</main></div></div>
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>AWFLWIKITEXT — AEDTP WORLD</title>
+   <meta name="description" content="A free, open wiki world by AEDTP WORLD. Discover And Connect.">
+    <meta name="author" content="AEDTP WORLD">
+    <meta name="copyright" content="© AEDTP WORLD">
+    <meta name="keywords" content="AEDTP WORLD, AEDTP WORLD FREE LICENSE, AWFL, AWFLWIKIWORLD, WIKI, Discover And Connect">
+    <meta name="license" content="AEDTP WORLD FREE LICENSE (AWFL)">
+    <meta name="robots" content="index, follow">
+    <meta name="application-name" content="AWFLWIKIWORLD">
+    <link rel="canonical" href="https://aedtpworld.com/wikiworld">
+    <meta property="og:title" content="Dashboard — AWFLWIKIWORLD">
+    <meta property="og:description" content="A free, open wiki world by AEDTP WORLD. Discover And Connect.">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://aedtpworld.com/wikiworld">
+    <meta property="og:image" content="https://aedtpworld.com/wikiworld/logo/aedtpworld.svg">
+    <meta property="og:site_name" content="AWFLWIKIWORLD">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Dashboard — AWFLWIKIWORLD">
+    <meta name="twitter:description" content="A free, open wiki world by AEDTP WORLD. Discover And Connect.">
+    <meta name="twitter:image" content="https://aedtpworld.com/wikiworld/logo/aedtpworld.svg">
+    <link rel="icon" href="https://aedtpworld.com/wikiworld/logo/aedtpworld.svg">
+    <link rel="apple-touch-icon" href="https://aedtpworld.com/wikiworld/logo/aedtpworld.svg">
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Organization",
+      "name": "AWFLWIKIWORLD",
+      "logo": "https://aedtpworld.com/wikiworld/logo/aedtpworld.svg",
+      "alternateName": "AEDTP WORLD FREE LICENSE (AWFL)",
+      "url": "https://aedtpworld.com/wikiworld",
+      "description": "A free, open wiki world by AEDTP WORLD. Discover And Connect.",
+      "publisher": { "@type": "Organization", "name": "AWFLWIKIWORLD" },
+      "sameAs": [
+        "https://aedtpworld.com",
+        "https://youtube.com/@aedtpworld",
+        "https://www.crunchbase.com/organization/aedtpworld",
+        "https://soundbetter.com/profiles/636065-aedtp-world",
+        "https://www.f6s.com/aedtpworld"
+      ]
+    }
+    </script>
+
+
+<style>
+/* AWFLWIKIWORLD — assets/site.css
+   Default base layout. Skins (skins/*.css) load AFTER this file and may
+   override any of these rules; if no skin is active, these rules stand alone. */
+
+:root {
+    --awfl-header-bg: #202122;
+    --awfl-header-text: #ffffff;
+    --awfl-button-bg: #36c;
+    --awfl-button-text: #ffffff;
+    --awfl-page-text: #202122;
+    --awfl-link: #0645ad;
+    --awfl-link-visited: #0b0080;
+    --awfl-border: #a2a9b1;
+    --awfl-bg: #ffffff;
+    --awfl-content-bg: #ffffff;
+}
+
+* { box-sizing: border-box; }
+
+html, body {
+    margin: 0; padding: 0;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif;
+    color: var(--awfl-page-text);
+    background: var(--awfl-bg);
+    line-height: 1.6;
+}
+
+a { color: var(--awfl-link); text-decoration: none; }
+a:visited { color: var(--awfl-link-visited); }
+a:hover { text-decoration: underline; }
+
+.awfl-wrapper { min-height: 100vh; display: flex; flex-direction: column; }
+
+/* ---- Header ---- */
+.awfl-header {
+    background: var(--awfl-header-bg);
+    color: var(--awfl-header-text);
+}
+.awfl-header-inner {
+    max-width: 1200px; margin: 0 auto; padding: 8px 16px;
+    display: flex; align-items: center; gap: 16px; flex-wrap: wrap;
+}
+.awfl-logo-link { display: flex; align-items: center; gap: 8px; color: var(--awfl-header-text); }
+.awfl-logo { width: 40px !important; height: 40px !important; object-fit: contain; }
+.awfl-sitename { font-weight: 700; font-size: 1.15rem; color: var(--awfl-header-text); }
+.awfl-searchform { flex: 1; display: flex; min-width: 180px; max-width: 420px; }
+.awfl-searchform input { flex: 1; padding: 6px 10px; border: 1px solid var(--awfl-border); border-radius: 2px 0 0 2px; }
+.awfl-searchform button {
+    padding: 6px 12px; border: none; border-radius: 0 2px 2px 0;
+    background: var(--awfl-button-bg); color: var(--awfl-button-text); cursor: pointer;
+}
+.awfl-usernav { display: flex; gap: 12px; align-items: center; font-size: 0.9rem; flex-wrap: wrap; }
+.awfl-usernav a { color: var(--awfl-header-text); opacity: 0.9; }
+.awfl-usernav a:hover { opacity: 1; }
+.awfl-username { color: var(--awfl-header-text); font-weight: 600; }
+
+/* ---- Body / main content ---- */
+.awfl-body { flex: 1; max-width: 1200px; margin: 0 auto; width: 100%; padding: 24px 16px; }
+.awfl-main { background: var(--awfl-content-bg); }
+.awfl-narrow { max-width: 480px; margin: 0 auto; }
+
+.awfl-page-titlebar {
+    display: flex; justify-content: space-between; align-items: baseline; flex-wrap: wrap;
+    border-bottom: 1px solid var(--awfl-border); padding-bottom: 8px; margin-bottom: 16px; gap: 8px;
+}
+.awfl-page-titlebar h1 { margin: 0; }
+.awfl-space-tag {
+    font-size: 0.55em; vertical-align: middle; margin-left: 8px; padding: 2px 8px;
+    background: #eaecf0; border-radius: 10px; color: #54595d; font-weight: normal;
+}
+.awfl-protected-tag { background: #fef1d7; color: #8a6100; }
+.awfl-page-actions { display: flex; gap: 14px; font-size: 0.9rem; flex-wrap: wrap; align-items: center; }
+.awfl-danger-link { color: #d33; }
+
+.awfl-download-menu { position: relative; display: inline-block; }
+.awfl-download-toggle { cursor: pointer; }
+.awfl-download-list {
+    display: none; position: absolute; top: 100%; left: 0; z-index: 20; margin-top: 4px;
+    background: var(--awfl-content-bg, #fff); border: 1px solid var(--awfl-border, #a2a9b1);
+    border-radius: 4px; box-shadow: 0 2px 6px rgba(0,0,0,0.15); min-width: 100px; padding: 4px 0;
+}
+.awfl-download-menu.open .awfl-download-list { display: block; }
+.awfl-download-list a { display: block; padding: 6px 14px; white-space: nowrap; text-decoration: none; }
+.awfl-download-list a:hover { background: #eaecf0; }
+
+.awfl-article { font-size: 1rem; }
+.awfl-article h1, .awfl-article h2 { border-bottom: 1px solid var(--awfl-border); padding-bottom: 4px; }
+.awfl-article ul, .awfl-article ol { padding-left: 1.6em; }
+.awfl-article code, .awfl-visual-preview code {
+    background: #f3f3f3; border: 1px solid var(--awfl-border); border-radius: 3px;
+    padding: 0 4px; font-family: monospace; font-size: 0.9em;
+}
+.awfl-article pre, .awfl-visual-preview pre {
+    background: #f3f3f3; border: 1px solid var(--awfl-border); border-radius: 4px;
+    padding: 10px 12px; overflow-x: auto;
+}
+.awfl-article pre code, .awfl-visual-preview pre code { background: none; border: none; padding: 0; }
+.awfl-article blockquote, .awfl-visual-preview blockquote {
+    margin: 1em 0; padding: 4px 14px; border-left: 4px solid var(--awfl-border);
+    color: #54595d; font-style: italic;
+}
+.awfl-article mark, .awfl-visual-preview mark { background: #fff2a8; padding: 0 2px; }
+.awfl-article hr, .awfl-visual-preview hr { border: none; border-top: 1px solid var(--awfl-border); margin: 1.5em 0; }
+.awfl-article del, .awfl-article s, .awfl-visual-preview del, .awfl-visual-preview s { opacity: 0.75; }
+.awfl-article .awfl-nowiki, .awfl-visual-preview .awfl-nowiki {
+    background: #f3f3f3; border: 1px solid var(--awfl-border); border-radius: 3px;
+    padding: 0 4px; font-family: monospace; font-size: 0.9em; white-space: pre-wrap;
+}
+.awfl-missing { font-style: italic; color: #54595d; }
+
+/* ---- Infobox ---- */
+.infobox {
+    float: right; margin: 0 0 1em 1em; width: 280px; border: 1px solid var(--awfl-border);
+    border-collapse: collapse; background: #f8f9fa; font-size: 0.875rem;
+}
+.infobox th, .infobox td { border: 1px solid var(--awfl-border); padding: 6px 8px; text-align: left; vertical-align: top; }
+.infobox th { font-weight: bold; background: #eaecf0; width: 38%; }
+.infobox-title { background: #ccdcf0 !important; text-align: center !important; font-size: 1.1em; }
+.infobox-image { text-align: center; }
+.infobox-image img { width: 250px !important; height: auto; }
+.infobox-caption { font-size: 0.85em; color: #54595d; margin-top: 4px; }
+
+/* ---- Forms ---- */
+.awfl-form { display: flex; flex-direction: column; gap: 12px; margin: 16px 0; }
+.awfl-form label { display: flex; flex-direction: column; gap: 4px; font-size: 0.9rem; }
+.awfl-form input, .awfl-form select, .awfl-form textarea {
+    padding: 8px; border: 1px solid var(--awfl-border); border-radius: 3px; font: inherit;
+}
+.awfl-form button, button, .awfl-editor-actions button, .awfl-danger {
+    background: var(--awfl-button-bg); color: var(--awfl-button-text);
+    border: none; padding: 8px 16px; border-radius: 3px; cursor: pointer; font: inherit;
+}
+.awfl-danger { background: #d33; }
+.awfl-error { color: #d33; }
+.awfl-success { color: #14866d; }
+
+/* ---- Editor ---- */
+.awfl-editing-label { font-size: 0.5em; color: #54595d; margin-left: 10px; }
+.awfl-editor-toolbar { display: flex; gap: 6px; margin-bottom: 8px; flex-wrap: wrap; align-items: center; }
+.awfl-editor-toolbar button {
+    background: #f8f9fa; color: #202122; border: 1px solid var(--awfl-border);
+    padding: 6px 10px; border-radius: 3px; cursor: pointer;
+}
+.awfl-editor-toolbar .awfl-tab.active { background: var(--awfl-button-bg); color: #fff; }
+.awfl-toolbar-sep { width: 1px; height: 20px; background: var(--awfl-border); margin: 0 6px; }
+#awfl-wikitext { width: 100%; font-family: monospace; font-size: 0.95rem; padding: 10px; border: 1px solid var(--awfl-border); border-radius: 3px; }
+.awfl-visual-preview {
+    border: 1px solid var(--awfl-border); border-radius: 3px; padding: 14px; min-height: 300px;
+    background: #fff; cursor: text;
+}
+.awfl-visual-preview:focus { outline: 2px solid var(--awfl-button-bg); outline-offset: -1px; }
+.awfl-visual-preview img { max-width: 100%; }
+.awfl-editor-actions { margin-top: 10px; display: flex; gap: 10px; }
+
+/* ---- Lists / tables ---- */
+.awfl-pagelist { columns: 3; column-gap: 24px; }
+table.awfl-datatable { border-collapse: collapse; width: 100%; margin: 12px 0; }
+table.awfl-datatable th, table.awfl-datatable td { border: 1px solid var(--awfl-border); padding: 8px; text-align: left; }
+table.awfl-datatable th { background: #eaecf0; }
+table.awfl-datatable th a { color: inherit; }
+
+/* ---- Image gallery (allimages) ---- */
+.awfl-image-grid {
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+    gap: 12px;
+}
+.awfl-image-cell {
+    border: 1px solid var(--awfl-border); border-radius: 4px; padding: 6px;
+    display: flex; flex-direction: column; align-items: center; text-align: center;
+    background: #fff;
+}
+.awfl-image-cell img { width: 100%; aspect-ratio: 1/1; object-fit: cover; border-radius: 2px; }
+.awfl-image-name { font-size: 0.75rem; margin: 6px 0 4px; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; width: 100%; }
+.awfl-image-cell-actions { display: flex; flex-direction: column; gap: 4px; width: 100%; }
+.awfl-image-cell-actions button { font-size: 0.7rem; padding: 4px 6px; }
+@media (max-width: 1000px) { .awfl-image-grid { grid-template-columns: repeat(4, 1fr); } }
+@media (max-width: 600px) { .awfl-image-grid { grid-template-columns: repeat(2, 1fr); } }
+
+/* ---- Footer ---- */
+.awfl-footer { border-top: 1px solid var(--awfl-border); background: #f8f9fa; margin-top: 24px; }
+.awfl-footer-inner { max-width: 1200px; margin: 0 auto; padding: 16px; font-size: 0.85rem; color: #54595d; }
+.awfl-powered { display: flex; align-items: center; gap: 8px; margin-bottom: 6px; color: #54595d; }
+.awfl-powered img { width: 40px !important; height: 40px !important; object-fit: contain; }
+.awfl-footer-links { margin-bottom: 6px; }
+
+/* ---- Dashboard color rows ---- */
+.awfl-color-row { display: flex; align-items: center; gap: 10px; margin-bottom: 10px; }
+.awfl-color-row label { min-width: 160px; }
+.awfl-color-row input[type=text] { width: 100px; font-family: monospace; }
+
+/* ---- Responsive ---- */
+@media (max-width: 720px) {
+    .awfl-pagelist { columns: 1; }
+    .infobox { float: none; width: 100%; margin: 1em 0; }
+    .awfl-header-inner { flex-direction: column; align-items: stretch; }
+    .awfl-searchform { max-width: none; }
+}
+
+@media print {
+    .awfl-header, .awfl-footer, .awfl-page-actions, .awfl-usernav { display: none !important; }
+    .infobox { float: none; width: 100%; }
+}
+
+/* AWFLWIKIWORLD — skins/vector2022.css
+   Default skin, modeled after Wikipedia's Vector 2022. This is the
+   system default and cannot be deleted — only a custom copy may be
+   created and edited from the admin dashboard. */
+
+:root {
+    --awfl-header-bg: #ffffff;
+    --awfl-header-text: #202122;
+    --awfl-button-bg: #36c;
+    --awfl-button-text: #ffffff;
+    --awfl-page-text: #202122;
+    --awfl-link: #0645ad;
+    --awfl-link-visited: #0b0080;
+    --awfl-border: #a2a9b1;
+    --awfl-bg: #f8f9fa;
+    --awfl-content-bg: #ffffff;
+}
+
+.awfl-header {
+    background: var(--awfl-header-bg);
+    color: var(--awfl-header-text);
+    border-bottom: 1px solid var(--awfl-border);
+}
+.awfl-logo-link, .awfl-sitename { color: var(--awfl-header-text); }
+.awfl-usernav a { color: var(--awfl-link); opacity: 1; }
+
+.awfl-body {
+    background: var(--awfl-content-bg);
+    border: 1px solid var(--awfl-border);
+    border-top: none;
+    padding: 24px;
+}
+
+.awfl-main h1 {
+    font-family: Georgia, 'Linux Libertine', 'Times New Roman', serif;
+    font-weight: normal;
+    border-bottom: 1px solid var(--awfl-border);
+    padding-bottom: 6px;
+}
+
+.awfl-article { font-family: sans-serif; }
+
+
+</style>
+</head>
+<body>
+<div class="awfl-wrapper"><div class="awfl-body"><main class="awfl-main">
+<h1>AWFLWIKITEXT</h1>
+<article class="awfl-article"><table class="infobox"><tr><th class="infobox-title" colspan="2">AWFLWIKITEXT</th></tr><tr><th>Type</th><td>Lightweight markup language</td></tr><tr><th>Used by</th><td>AWFLWIKIWORLD</td></tr><tr><th>Formats</th><td>19</td></tr><tr><th>Reference article</th><td>AWFLWIKIWORLD</td></tr></table>
+<p><strong>AWFLWIKITEXT</strong> is the markup language every AWFLWIKIWORLD page is written in. This page lists every format the parser understands. Each entry shows the raw syntax first, in a code box, followed by what it looks like once rendered.</p>
+<h2>Text styling</h2>
+<h3>Bold</h3>
+<p>Wrap text in three apostrophes to make it bold.</p>
+<pre><code>&#039;&#039;&#039;bold text&#039;&#039;&#039;</code></pre>
+<p>Rendered: <strong>bold text</strong></p>
+<h3>Italic</h3>
+<p>Wrap text in two apostrophes to make it italic.</p>
+<pre><code>&#039;&#039;italic text&#039;&#039;</code></pre>
+<p>Rendered: <em>italic text</em></p>
+<h3>Underline</h3>
+<p>Wrap text in two underscores to underline it.</p>
+<pre><code>__underlined text__</code></pre>
+<p>Rendered: <u>underlined text</u></p>
+<h3>Strikethrough</h3>
+<p>Wrap text in two tildes to strike it through — useful for showing something retired or replaced.</p>
+<pre><code>~~struck-through text~~</code></pre>
+<p>Rendered: <del>struck-through text</del></p>
+<h3>Inline code</h3>
+<p>Wrap text in backticks to show it as inline code — file names, commands, variable names.</p>
+<pre><code>`inline code`</code></pre>
+<p>Rendered: <code>inline code</code></p>
+<h3>Superscript</h3>
+<p>Wrap text in two carets to raise it, for exponents and ordinals.</p>
+<pre><code>E=mc^^2^^</code></pre>
+<p>Rendered: E=mc<sup>2</sup></p>
+<h3>Subscript</h3>
+<p>Wrap text in two commas to lower it, for chemical formulas and indices.</p>
+<pre><code>H,,2,,O</code></pre>
+<p>Rendered: H<sub>2</sub>O</p>
+<h3>Highlight</h3>
+<p>Wrap text in two percent signs to highlight it, like a marker pen.</p>
+<pre><code>%%highlighted text%%</code></pre>
+<p>Rendered: <mark>highlighted text</mark></p>
+<h2>Structure</h2>
+<h3>Headings</h3>
+<p>Surround a line with one to six equals signs. One equals sign makes the largest heading (level 1); more equals signs make progressively smaller, deeper headings, down to level 6.</p>
+<pre><code>= Level 1 =
+== Level 2 ==
+=== Level 3 ===
+==== Level 4 ====
+===== Level 5 =====
+====== Level 6 ======</code></pre>
+<p>Rendered:</p>
+<h5>Level 5</h5>
+<h6>Level 6</h6>
+<p>(Levels 2, 3 and 4 are already used as real section headings throughout this very page, and level 1 is demonstrated below, so scroll up — or down — to see them in action.)</p>
+<h1>Level 1 example</h1>
+<p>This line above is a real, live level-1 heading, written as <span class="awfl-nowiki">= Level 1 example =</span>.</p>
+<h3>Paragraphs</h3>
+<p>Leave a blank line between blocks of text. Each block becomes its own paragraph automatically — there&#039;s no special paragraph marker to type.</p>
+<h3>Bulleted list</h3>
+<p>Start each line with an asterisk and a space.</p>
+<pre><code>* First item
+* Second item
+* Third item</code></pre>
+<p>Rendered:</p>
+<ul>
+<li>First item</li>
+<li>Second item</li>
+<li>Third item</li>
+</ul>
+<h3>Numbered list</h3>
+<p>Start each line with a hash and a space.</p>
+<pre><code># First step
+# Second step
+# Third step</code></pre>
+<p>Rendered:</p>
+<ol>
+<li>First step</li>
+<li>Second step</li>
+<li>Third step</li>
+</ol>
+<h3>Blockquote</h3>
+<p>Start each line of the quote with a &quot;greater than&quot; sign and a space.</p>
+<pre><code>&gt; Everything is a plain text file, waiting to be read.</code></pre>
+<p>Rendered:</p>
+<blockquote>
+Everything is a plain text file, waiting to be read.
+</blockquote>
+<h3>Horizontal rule</h3>
+<p>A line made up of four or more dashes, on its own, draws a divider.</p>
+<pre><code>----</code></pre>
+<p>Rendered:</p>
+<hr>
+<h3>Code block</h3>
+<p>Wrap one or more lines in triple curly braces to show preformatted, monospaced text exactly as typed — line breaks and spacing are preserved, and no other formatting is applied inside it.</p>
+<p><span class="awfl-nowiki">{{{
+function hello() {
+    return &quot;hi&quot;;
+}
+}}}</span></p>
+<p>Rendered:</p>
+<pre><code>function hello() {
+    return &quot;hi&quot;;
+}</code></pre>
+<h2>Links and media</h2>
+<h3>Internal link</h3>
+<p>Link to another page on this wiki with double square brackets. Add a vertical bar and custom text to change the visible label.</p>
+<pre><code>[[Page Name]]
+[[Page Name|words to display instead]]</code></pre>
+<p>Rendered: <a class="wiki-link" href="https://aedtpworld.com/wikiworld/index.php?title=AWFLWIKIWORLD/AWFLWIKIWORLD">AWFLWIKIWORLD</a> — and a link to a page that doesn&#039;t exist yet, <a class="wiki-link new" href="https://aedtpworld.com/wikiworld/index.php?title=AWFLWIKIWORLD/Some_New_Page">like this one</a>, is still shown, just styled differently, so clicking it lets you create that page.</p>
+<p>To link into a namespace, include it in the title: <span class="awfl-nowiki">[[Namespace/Page Name]]</span>. If the namespace doesn&#039;t already exist, following the link sends you home instead of creating it — only an admin can create a namespace, from the dashboard.</p>
+<h3>External link</h3>
+<p>Single square brackets, a full URL, a space, then the link text.</p>
+<pre><code>[https://example.com link text]</code></pre>
+<p>Rendered: <a href="https://en.wikipedia.org/wiki/Wiki" target="_blank" rel="noopener noreferrer">Wiki, on Wikipedia</a></p>
+<h3>Bare images</h3>
+<p>Any line that is just an image filename or URL ending in <code>.jpg</code>, <code>.jpeg</code>, <code>.png</code>, <code>.gif</code>, <code>.svg</code>, or <code>.webp</code> is automatically turned into a picture, shown at 250 pixels wide.</p>
+<pre><code>https://example.com/picture.jpg</code></pre>
+<p>Rendered:</p>
+<p><img src="index.php/logo/aedtpworld.svg" style="width:250px !important;height:auto;" alt=""></p>
+<h3>Infobox</h3>
+<p>A small fact-table, usually shown at the top of an article. <code>title</code>, <code>image</code> and <code>caption</code> are each allowed once and always appear in that order; every other <code>key=value</code> line becomes its own row, in the order you wrote it.</p>
+<p><span class="awfl-nowiki">&lt;infobox&gt;
+|title=Subject Name|
+|image=some-picture.jpg|
+|caption=A short caption|
+|Field one=Value one|
+|Field two=Value two|
+&lt;/infobox&gt;</span></p>
+<p>Rendered:</p>
+<table class="infobox"><tr><th class="infobox-title" colspan="2">Example Subject</th></tr><tr><th>Field one</th><td>Value one</td></tr><tr><th>Field two</th><td>Value two</td></tr></table>
+<h2>Escaping raw syntax</h2>
+<p>Sometimes you want to *show* AWFLWIKITEXT syntax as plain text instead of having it rendered — exactly like every syntax box on this page. Wrap the text in a <code>nowiki</code> tag pair (an opening tag, then the text, then a matching closing tag with a forward slash) and everything in between is shown exactly as typed, with no other formatting applied to it. This is precisely how the raw-syntax examples throughout this page avoid turning into real bold text, real headings, real links, and so on.</p>
+<h2>Quick reference</h2>
+<ul>
+<li>Bold: <span class="awfl-nowiki">&#039;&#039;&#039;text&#039;&#039;&#039;</span></li>
+<li>Italic: <span class="awfl-nowiki">&#039;&#039;text&#039;&#039;</span></li>
+<li>Underline: <span class="awfl-nowiki">__text__</span></li>
+<li>Strikethrough: <span class="awfl-nowiki">~~text~~</span></li>
+<li>Inline code: <span class="awfl-nowiki">`text`</span></li>
+<li>Superscript: <span class="awfl-nowiki">^^text^^</span></li>
+<li>Subscript: <span class="awfl-nowiki">,,text,,</span></li>
+<li>Highlight: <span class="awfl-nowiki">%%text%%</span></li>
+<li>Heading: <span class="awfl-nowiki">== text ==</span> (1 to 6 equals signs)</li>
+<li>Bulleted list: <span class="awfl-nowiki">* text</span></li>
+<li>Numbered list: <span class="awfl-nowiki"># text</span></li>
+<li>Blockquote: <span class="awfl-nowiki">&gt; text</span></li>
+<li>Horizontal rule: <span class="awfl-nowiki">----</span></li>
+<li>Code block: <span class="awfl-nowiki">{{{ text }}}</span></li>
+<li>Internal link: <span class="awfl-nowiki">[[Page]]</span> or <span class="awfl-nowiki">[[Page|Label]]</span></li>
+<li>External link: <span class="awfl-nowiki">[https://url Label]</span></li>
+<li>Bare image: a filename or URL ending in an image extension, on its own</li>
+<li>Infobox: <span class="awfl-nowiki">&lt;infobox&gt; ... &lt;/infobox&gt;</span></li>
+<li>Escape/raw text: wrap in a <code>nowiki</code> tag pair</li>
+</ul>
+<p>Every format above is also used live, for real, throughout the <a class="wiki-link" href="https://aedtpworld.com/wikiworld/index.php?title=AWFLWIKIWORLD/AWFLWIKIWORLD">AWFLWIKIWORLD</a> article — this page exists to explain each one on its own.</p>
+<h2>See also</h2>
+<ul>
+<li><a class="wiki-link" href="https://aedtpworld.com/wikiworld/index.php?title=AWFLWIKIWORLD/AWFLWIKIWORLD">AWFLWIKIWORLD</a></li>
+<li><a class="wiki-link" href="https://aedtpworld.com/wikiworld/index.php?title=Main_Page">Main Page</a></li>
+</ul></article>
+</main></div></div>
+</body>
+</html>
+
+
+
+
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>AWFLWIKIWORLD — AEDTP WORLD</title>
+   <meta name="description" content="A free, open wiki world by AEDTP WORLD. Discover And Connect.">
+    <meta name="author" content="AEDTP WORLD">
+    <meta name="copyright" content="© AEDTP WORLD">
+    <meta name="keywords" content="AEDTP WORLD, AEDTP WORLD FREE LICENSE, AWFL, AWFLWIKIWORLD, WIKI, Discover And Connect">
+    <meta name="license" content="AEDTP WORLD FREE LICENSE (AWFL)">
+    <meta name="robots" content="index, follow">
+    <meta name="application-name" content="AWFLWIKIWORLD">
+    <link rel="canonical" href="https://aedtpworld.com/wikiworld">
+    <meta property="og:title" content="Dashboard — AWFLWIKIWORLD">
+    <meta property="og:description" content="A free, open wiki world by AEDTP WORLD. Discover And Connect.">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://aedtpworld.com/wikiworld">
+    <meta property="og:image" content="https://aedtpworld.com/wikiworld/logo/aedtpworld.svg">
+    <meta property="og:site_name" content="AWFLWIKIWORLD">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Dashboard — AWFLWIKIWORLD">
+    <meta name="twitter:description" content="A free, open wiki world by AEDTP WORLD. Discover And Connect.">
+    <meta name="twitter:image" content="https://aedtpworld.com/wikiworld/logo/aedtpworld.svg">
+    <link rel="icon" href="https://aedtpworld.com/wikiworld/logo/aedtpworld.svg">
+    <link rel="apple-touch-icon" href="https://aedtpworld.com/wikiworld/logo/aedtpworld.svg">
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Organization",
+      "name": "AWFLWIKIWORLD",
+      "logo": "https://aedtpworld.com/wikiworld/logo/aedtpworld.svg",
+      "alternateName": "AEDTP WORLD FREE LICENSE (AWFL)",
+      "url": "https://aedtpworld.com/wikiworld",
+      "description": "A free, open wiki world by AEDTP WORLD. Discover And Connect.",
+      "publisher": { "@type": "Organization", "name": "AWFLWIKIWORLD" },
+      "sameAs": [
+        "https://aedtpworld.com",
+        "https://youtube.com/@aedtpworld",
+        "https://www.crunchbase.com/organization/aedtpworld",
+        "https://soundbetter.com/profiles/636065-aedtp-world",
+        "https://www.f6s.com/aedtpworld"
+      ]
+    }
+    </script>
+
+
+<style>
+/* AWFLWIKIWORLD — assets/site.css
+   Default base layout. Skins (skins/*.css) load AFTER this file and may
+   override any of these rules; if no skin is active, these rules stand alone. */
+
+:root {
+    --awfl-header-bg: #202122;
+    --awfl-header-text: #ffffff;
+    --awfl-button-bg: #36c;
+    --awfl-button-text: #ffffff;
+    --awfl-page-text: #202122;
+    --awfl-link: #0645ad;
+    --awfl-link-visited: #0b0080;
+    --awfl-border: #a2a9b1;
+    --awfl-bg: #ffffff;
+    --awfl-content-bg: #ffffff;
+}
+
+* { box-sizing: border-box; }
+
+html, body {
+    margin: 0; padding: 0;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif;
+    color: var(--awfl-page-text);
+    background: var(--awfl-bg);
+    line-height: 1.6;
+}
+
+a { color: var(--awfl-link); text-decoration: none; }
+a:visited { color: var(--awfl-link-visited); }
+a:hover { text-decoration: underline; }
+
+.awfl-wrapper { min-height: 100vh; display: flex; flex-direction: column; }
+
+/* ---- Header ---- */
+.awfl-header {
+    background: var(--awfl-header-bg);
+    color: var(--awfl-header-text);
+}
+.awfl-header-inner {
+    max-width: 1200px; margin: 0 auto; padding: 8px 16px;
+    display: flex; align-items: center; gap: 16px; flex-wrap: wrap;
+}
+.awfl-logo-link { display: flex; align-items: center; gap: 8px; color: var(--awfl-header-text); }
+.awfl-logo { width: 40px !important; height: 40px !important; object-fit: contain; }
+.awfl-sitename { font-weight: 700; font-size: 1.15rem; color: var(--awfl-header-text); }
+.awfl-searchform { flex: 1; display: flex; min-width: 180px; max-width: 420px; }
+.awfl-searchform input { flex: 1; padding: 6px 10px; border: 1px solid var(--awfl-border); border-radius: 2px 0 0 2px; }
+.awfl-searchform button {
+    padding: 6px 12px; border: none; border-radius: 0 2px 2px 0;
+    background: var(--awfl-button-bg); color: var(--awfl-button-text); cursor: pointer;
+}
+.awfl-usernav { display: flex; gap: 12px; align-items: center; font-size: 0.9rem; flex-wrap: wrap; }
+.awfl-usernav a { color: var(--awfl-header-text); opacity: 0.9; }
+.awfl-usernav a:hover { opacity: 1; }
+.awfl-username { color: var(--awfl-header-text); font-weight: 600; }
+
+/* ---- Body / main content ---- */
+.awfl-body { flex: 1; max-width: 1200px; margin: 0 auto; width: 100%; padding: 24px 16px; }
+.awfl-main { background: var(--awfl-content-bg); }
+.awfl-narrow { max-width: 480px; margin: 0 auto; }
+
+.awfl-page-titlebar {
+    display: flex; justify-content: space-between; align-items: baseline; flex-wrap: wrap;
+    border-bottom: 1px solid var(--awfl-border); padding-bottom: 8px; margin-bottom: 16px; gap: 8px;
+}
+.awfl-page-titlebar h1 { margin: 0; }
+.awfl-space-tag {
+    font-size: 0.55em; vertical-align: middle; margin-left: 8px; padding: 2px 8px;
+    background: #eaecf0; border-radius: 10px; color: #54595d; font-weight: normal;
+}
+.awfl-protected-tag { background: #fef1d7; color: #8a6100; }
+.awfl-page-actions { display: flex; gap: 14px; font-size: 0.9rem; flex-wrap: wrap; align-items: center; }
+.awfl-danger-link { color: #d33; }
+
+.awfl-download-menu { position: relative; display: inline-block; }
+.awfl-download-toggle { cursor: pointer; }
+.awfl-download-list {
+    display: none; position: absolute; top: 100%; left: 0; z-index: 20; margin-top: 4px;
+    background: var(--awfl-content-bg, #fff); border: 1px solid var(--awfl-border, #a2a9b1);
+    border-radius: 4px; box-shadow: 0 2px 6px rgba(0,0,0,0.15); min-width: 100px; padding: 4px 0;
+}
+.awfl-download-menu.open .awfl-download-list { display: block; }
+.awfl-download-list a { display: block; padding: 6px 14px; white-space: nowrap; text-decoration: none; }
+.awfl-download-list a:hover { background: #eaecf0; }
+
+.awfl-article { font-size: 1rem; }
+.awfl-article h1, .awfl-article h2 { border-bottom: 1px solid var(--awfl-border); padding-bottom: 4px; }
+.awfl-article ul, .awfl-article ol { padding-left: 1.6em; }
+.awfl-article code, .awfl-visual-preview code {
+    background: #f3f3f3; border: 1px solid var(--awfl-border); border-radius: 3px;
+    padding: 0 4px; font-family: monospace; font-size: 0.9em;
+}
+.awfl-article pre, .awfl-visual-preview pre {
+    background: #f3f3f3; border: 1px solid var(--awfl-border); border-radius: 4px;
+    padding: 10px 12px; overflow-x: auto;
+}
+.awfl-article pre code, .awfl-visual-preview pre code { background: none; border: none; padding: 0; }
+.awfl-article blockquote, .awfl-visual-preview blockquote {
+    margin: 1em 0; padding: 4px 14px; border-left: 4px solid var(--awfl-border);
+    color: #54595d; font-style: italic;
+}
+.awfl-article mark, .awfl-visual-preview mark { background: #fff2a8; padding: 0 2px; }
+.awfl-article hr, .awfl-visual-preview hr { border: none; border-top: 1px solid var(--awfl-border); margin: 1.5em 0; }
+.awfl-article del, .awfl-article s, .awfl-visual-preview del, .awfl-visual-preview s { opacity: 0.75; }
+.awfl-article .awfl-nowiki, .awfl-visual-preview .awfl-nowiki {
+    background: #f3f3f3; border: 1px solid var(--awfl-border); border-radius: 3px;
+    padding: 0 4px; font-family: monospace; font-size: 0.9em; white-space: pre-wrap;
+}
+.awfl-missing { font-style: italic; color: #54595d; }
+
+/* ---- Infobox ---- */
+.infobox {
+    float: right; margin: 0 0 1em 1em; width: 280px; border: 1px solid var(--awfl-border);
+    border-collapse: collapse; background: #f8f9fa; font-size: 0.875rem;
+}
+.infobox th, .infobox td { border: 1px solid var(--awfl-border); padding: 6px 8px; text-align: left; vertical-align: top; }
+.infobox th { font-weight: bold; background: #eaecf0; width: 38%; }
+.infobox-title { background: #ccdcf0 !important; text-align: center !important; font-size: 1.1em; }
+.infobox-image { text-align: center; }
+.infobox-image img { width: 250px !important; height: auto; }
+.infobox-caption { font-size: 0.85em; color: #54595d; margin-top: 4px; }
+
+/* ---- Forms ---- */
+.awfl-form { display: flex; flex-direction: column; gap: 12px; margin: 16px 0; }
+.awfl-form label { display: flex; flex-direction: column; gap: 4px; font-size: 0.9rem; }
+.awfl-form input, .awfl-form select, .awfl-form textarea {
+    padding: 8px; border: 1px solid var(--awfl-border); border-radius: 3px; font: inherit;
+}
+.awfl-form button, button, .awfl-editor-actions button, .awfl-danger {
+    background: var(--awfl-button-bg); color: var(--awfl-button-text);
+    border: none; padding: 8px 16px; border-radius: 3px; cursor: pointer; font: inherit;
+}
+.awfl-danger { background: #d33; }
+.awfl-error { color: #d33; }
+.awfl-success { color: #14866d; }
+
+/* ---- Editor ---- */
+.awfl-editing-label { font-size: 0.5em; color: #54595d; margin-left: 10px; }
+.awfl-editor-toolbar { display: flex; gap: 6px; margin-bottom: 8px; flex-wrap: wrap; align-items: center; }
+.awfl-editor-toolbar button {
+    background: #f8f9fa; color: #202122; border: 1px solid var(--awfl-border);
+    padding: 6px 10px; border-radius: 3px; cursor: pointer;
+}
+.awfl-editor-toolbar .awfl-tab.active { background: var(--awfl-button-bg); color: #fff; }
+.awfl-toolbar-sep { width: 1px; height: 20px; background: var(--awfl-border); margin: 0 6px; }
+#awfl-wikitext { width: 100%; font-family: monospace; font-size: 0.95rem; padding: 10px; border: 1px solid var(--awfl-border); border-radius: 3px; }
+.awfl-visual-preview {
+    border: 1px solid var(--awfl-border); border-radius: 3px; padding: 14px; min-height: 300px;
+    background: #fff; cursor: text;
+}
+.awfl-visual-preview:focus { outline: 2px solid var(--awfl-button-bg); outline-offset: -1px; }
+.awfl-visual-preview img { max-width: 100%; }
+.awfl-editor-actions { margin-top: 10px; display: flex; gap: 10px; }
+
+/* ---- Lists / tables ---- */
+.awfl-pagelist { columns: 3; column-gap: 24px; }
+table.awfl-datatable { border-collapse: collapse; width: 100%; margin: 12px 0; }
+table.awfl-datatable th, table.awfl-datatable td { border: 1px solid var(--awfl-border); padding: 8px; text-align: left; }
+table.awfl-datatable th { background: #eaecf0; }
+table.awfl-datatable th a { color: inherit; }
+
+/* ---- Image gallery (allimages) ---- */
+.awfl-image-grid {
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+    gap: 12px;
+}
+.awfl-image-cell {
+    border: 1px solid var(--awfl-border); border-radius: 4px; padding: 6px;
+    display: flex; flex-direction: column; align-items: center; text-align: center;
+    background: #fff;
+}
+.awfl-image-cell img { width: 100%; aspect-ratio: 1/1; object-fit: cover; border-radius: 2px; }
+.awfl-image-name { font-size: 0.75rem; margin: 6px 0 4px; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; width: 100%; }
+.awfl-image-cell-actions { display: flex; flex-direction: column; gap: 4px; width: 100%; }
+.awfl-image-cell-actions button { font-size: 0.7rem; padding: 4px 6px; }
+@media (max-width: 1000px) { .awfl-image-grid { grid-template-columns: repeat(4, 1fr); } }
+@media (max-width: 600px) { .awfl-image-grid { grid-template-columns: repeat(2, 1fr); } }
+
+/* ---- Footer ---- */
+.awfl-footer { border-top: 1px solid var(--awfl-border); background: #f8f9fa; margin-top: 24px; }
+.awfl-footer-inner { max-width: 1200px; margin: 0 auto; padding: 16px; font-size: 0.85rem; color: #54595d; }
+.awfl-powered { display: flex; align-items: center; gap: 8px; margin-bottom: 6px; color: #54595d; }
+.awfl-powered img { width: 40px !important; height: 40px !important; object-fit: contain; }
+.awfl-footer-links { margin-bottom: 6px; }
+
+/* ---- Dashboard color rows ---- */
+.awfl-color-row { display: flex; align-items: center; gap: 10px; margin-bottom: 10px; }
+.awfl-color-row label { min-width: 160px; }
+.awfl-color-row input[type=text] { width: 100px; font-family: monospace; }
+
+/* ---- Responsive ---- */
+@media (max-width: 720px) {
+    .awfl-pagelist { columns: 1; }
+    .infobox { float: none; width: 100%; margin: 1em 0; }
+    .awfl-header-inner { flex-direction: column; align-items: stretch; }
+    .awfl-searchform { max-width: none; }
+}
+
+@media print {
+    .awfl-header, .awfl-footer, .awfl-page-actions, .awfl-usernav { display: none !important; }
+    .infobox { float: none; width: 100%; }
+}
+
+/* AWFLWIKIWORLD — skins/vector2022.css
+   Default skin, modeled after Wikipedia's Vector 2022. This is the
+   system default and cannot be deleted — only a custom copy may be
+   created and edited from the admin dashboard. */
+
+:root {
+    --awfl-header-bg: #ffffff;
+    --awfl-header-text: #202122;
+    --awfl-button-bg: #36c;
+    --awfl-button-text: #ffffff;
+    --awfl-page-text: #202122;
+    --awfl-link: #0645ad;
+    --awfl-link-visited: #0b0080;
+    --awfl-border: #a2a9b1;
+    --awfl-bg: #f8f9fa;
+    --awfl-content-bg: #ffffff;
+}
+
+.awfl-header {
+    background: var(--awfl-header-bg);
+    color: var(--awfl-header-text);
+    border-bottom: 1px solid var(--awfl-border);
+}
+.awfl-logo-link, .awfl-sitename { color: var(--awfl-header-text); }
+.awfl-usernav a { color: var(--awfl-link); opacity: 1; }
+
+.awfl-body {
+    background: var(--awfl-content-bg);
+    border: 1px solid var(--awfl-border);
+    border-top: none;
+    padding: 24px;
+}
+
+.awfl-main h1 {
+    font-family: Georgia, 'Linux Libertine', 'Times New Roman', serif;
+    font-weight: normal;
+    border-bottom: 1px solid var(--awfl-border);
+    padding-bottom: 6px;
+}
+
+.awfl-article { font-family: sans-serif; }
+
+
+</style>
+</head>
+<body>
+<div class="awfl-wrapper"><div class="awfl-body"><main class="awfl-main">
+<h1>AWFLWIKIWORLD</h1>
+<article class="awfl-article"><table class="infobox"><tr><th class="infobox-title" colspan="2">AWFLWIKIWORLD</th></tr><tr><td colspan="2" class="infobox-image"><img src="index.php/logo/aedtpworld.svg" alt="The AWFLWIKIWORLD logo" style="width:250px !important;height:auto;"><div class="infobox-caption">The AWFLWIKIWORLD logo</div></td></tr><tr><th>Developer</th><td>AEDTP WORLD</td></tr><tr><th>Type</th><td>Wiki engine</td></tr><tr><th>Interface style</th><td>MediaWiki / Vector 2022</td></tr><tr><th>Written in</th><td>PHP 8.3</td></tr><tr><th>License</th><td>AEDTP WORLD FREE LICENSE (AWFL)</td></tr><tr><th>Storage</th><td>Flat files (.txt pages, .json users/settings)</td></tr><tr><th>Default skin</th><td>vector2022</td></tr></table>
+<p><strong>AWFLWIKIWORLD</strong> is a self-contained, MediaWiki-style wiki engine built in plain PHP. It stores every page as a plain text file, every user as a JSON record, and every visual style as a CSS file — no database, no build step, no external dependencies. Copy the folder onto any PHP 8.3 server (or run it on localhost), fill in one configuration file, and you have a working wiki.</p>
+<p>This page explains what AWFLWIKIWORLD is, why it exists, how it is built, and how to use every part of it — as a visitor, as a registered user, and as the administrator.</p>
+<h2>Origins</h2>
+<p>An early prototype of AWFLWIKIWORLD stored pages in a database. That approach was <del>kept as the default</del> <u>replaced</u> once the flat-file design proved simpler to host, back up, and inspect — every page is now just a <code>.txt</code> file waiting to be opened in any text editor.</p>
+<h2>What is AWFLWIKIWORLD</h2>
+<p>AWFLWIKIWORLD is a wiki platform: a website anyone (or anyone you allow) can read, and that logged-in users can create and edit pages on, using a simplified text markup called <strong>AWFLWIKITEXT</strong>. Pages are organized under a root namespace or grouped into named <em>spaces</em> (for example, a space called <em>Music</em> could hold a page <em>Music/Buddy DML</em>). Every page can carry an <strong>infobox</strong> — a small fact-table, the same idea as the boxes you see in the top-right corner of Wikipedia articles.</p>
+<p>Unlike most wiki software, AWFLWIKIWORLD keeps everything in ordinary files:</p>
+<ul>
+<li>Each wiki page is one <em>.txt</em> file containing raw AWFLWIKITEXT.</li>
+<li>Each user is one JSON record in <em>users/users.json</em>.</li>
+<li>Each visual theme is one <em>.css</em> file in <em>skins/</em>.</li>
+<li>Uploaded pictures are plain <em>.jpg</em>/<em>.png</em> files in <em>images/</em>.</li>
+</ul>
+<p>This makes the whole wiki easy to back up (copy the folder), easy to inspect (open any file in a text editor), and easy to move between a local computer and a live server.</p>
+<h2>Why AWFLWIKIWORLD</h2>
+<p>AWFLWIKIWORLD was built for people who want a Wikipedia-like knowledge base without running a database server, without installing a heavyweight CMS, and without losing control of their own content. Because every page is a plain text file:</p>
+<blockquote>
+If you can read a text file, you can read the entire wiki. If you can write one, you can back it up, move it, or fix it by hand.
+</blockquote>
+<ul>
+<li>You can read or edit the raw content outside the wiki, with any text editor.</li>
+<li>You can move the wiki by copying a folder — no database export/import.</li>
+<li>You can inspect exactly what the system stores, since nothing is hidden inside binary tables.</li>
+<li>You still get the features people expect from a real wiki: accounts, page history for admin edits, protected pages, image galleries, sitemaps, and a skins system.</li>
+</ul>
+<h2>How it is Built (Architecture)</h2>
+<p>The engine is a small number of PHP scripts working together:</p>
+<ul>
+<li><strong>config.php</strong> — the single file every other script reads. It defines the site name, the site&#039;s own URL (<em>$Server</em>), the admin login, upload rules, and the URL style.</li>
+<li><strong>includes/functions.php</strong> — the engine room: user accounts, page storage, the AWFLWIKITEXT parser, image handling, and URL building all live here.</li>
+<li><strong>includes/header.php</strong> and <strong>includes/footer.php</strong> — the shared page frame (navigation bar, meta tags, footer) that every page includes.</li>
+<li><strong>index.php</strong> — the main controller. Almost every page you visit — viewing an article, logging in, editing, saving, downloading — passes through this one file.</li>
+<li><strong>dashboard/index.php</strong> — the admin control panel.</li>
+<li><strong>allusers/index.php</strong> and <strong>allimages/index.php</strong> — public directories of accounts and uploaded pictures.</li>
+<li><strong>sitemap/sitemap.php</strong> — builds the search-engine sitemap.</li>
+</ul>
+<h2>File Structure</h2>
+<ul>
+<li><em>index.php</em> — the interface every visitor loads.</li>
+<li><em>config.php</em> — site settings (see below).</li>
+<li><em>.htaccess</em> — hides raw data files (.txt, .json) from being downloaded directly, and enables pretty URLs.</li>
+<li><em>includes/header.php</em>, <em>includes/footer.php</em>, <em>includes/functions.php</em> — shared page frame and engine code.</li>
+<li><em>users/users.json</em> — every registered account (hashed passwords only).</li>
+<li><em>users/recover.php</em> — the &quot;forgot password&quot; page.</li>
+<li><em>assets/site.css</em>, <em>assets/site.js</em> — the default look and the editor toolbar script. These never change; skins layer on top of them.</li>
+<li><em>skins/vector2022.css</em> — the default skin. More skins can be added here.</li>
+<li><em>images/</em> — uploaded <em>.jpg</em>/<em>.png</em> files. <em>images/trash/</em> holds images an admin has deleted but not yet permanently removed.</li>
+<li><em>allusers/index.php</em> — public list of accounts.</li>
+<li><em>allimages/index.php</em> — public gallery of uploaded images.</li>
+<li><em>namespaces/{pagename}.txt</em> — a root-level article.</li>
+<li><em>namespaces/{space name}/{pagename}.txt</em> — an article inside a named space.</li>
+<li><em><img src="images/logo/aedtpworld.svg" style="width:250px !important;height:auto;" alt=""></em> — the default logo, used whenever <em>$Logo</em> is not overridden.</li>
+<li><em>dashboard/index.php</em> — the admin panel (skins, colors, pages, images).</li>
+<li><em>dashboard/history.json</em>, <em>dashboard/history.php</em> — the admin&#039;s own edit history.</li>
+<li><em>dashboard/protected.json</em> — the list of protected page titles.</li>
+<li><em>sitemap/sitemap.xml</em>, <em>sitemap/sitemap.php</em> — the generated sitemap and the script that builds it.</li>
+</ul>
+<h2>Getting Started (Installation)</h2>
+<ol>
+<li>Copy the whole <em>wikiworld</em> folder onto your PHP 8.3 server, or into any folder you will run with PHP&#039;s built-in server for local testing.</li>
+<li>Open <em>config.php</em> in a text editor — this is the <u>only</u> file you need to touch by hand to get a working wiki.</li>
+<li>Set <strong>$Server</strong> to the exact base URL you will use to reach the wiki, for example:</li>
+</ol>
+<pre><code>$Server = &quot;https://example.com/wiki&quot;;
+// or, for local testing:
+$Server = &quot;https://aedtpworld.com/wikiworld//localhost:8099&quot;;</code></pre>
+<p>This is not auto-detected; you must type it in, because auto-detection breaks on real hosting (reverse proxies, subfolders, and admin/sitemap pages living in subdirectories would each guess a different, wrong URL).</p>
+<p><mark>Set $Server to its real, final address before you invite anyone else to the wiki — every link, download, and image on the site is built from this one value.</mark></p>
+<ol>
+<li>Set <strong>$Sitename</strong>, <strong>$MetaTitle</strong> and <strong>$MetaDescription</strong> to describe your wiki.</li>
+<li>Set <strong>$Username</strong> and <strong>$Password</strong> to your admin login.</li>
+<li>Choose an <strong>$route</strong> mode (explained below).</li>
+<li>Visit <em>$Server/index.php</em> in a browser. You should see the built-in Main Page.</li>
+</ol>
+<p>If you see a message saying the wiki &quot;is not configured yet,&quot; it means <em>$Server</em> is still blank in <em>config.php</em> — fill it in and reload.</p>
+<h3>The $route modes</h3>
+<p><em>$route</em> controls the shape of every page&#039;s URL:</p>
+<ul>
+<li><strong>&quot;0&quot;</strong> — <em>{$Server}/index.php?title=Pagename</em> (and <em>?title=Space/Pagename</em>). Works everywhere, no server configuration needed. This is the default.</li>
+<li><strong>&quot;1&quot;</strong> — <em>{$Server}/Pagename</em> (and <em>{$Server}/Space/Pagename</em>). Pretty URLs. Requires the supplied <em>.htaccess</em> and an Apache server with <em>mod_rewrite</em> and <em>AllowOverride All</em>.</li>
+<li><strong>&quot;2&quot;</strong> — <em>{$Server}/namespaces/Pagename</em>. Looks like a direct link into the <em>namespaces/</em> folder, but is still served by <em>index.php</em> — the <em>.htaccess</em> rules stop anyone from downloading the raw <em>.txt</em> file directly.</li>
+</ul>
+<h2>Using AWFLWIKIWORLD as a Visitor (not logged in)</h2>
+<p>Anyone can:</p>
+<ul>
+<li>Read any page.</li>
+<li>Use the search box in the header to jump straight to a page by title.</li>
+<li>Browse <a class="wiki-link new" href="https://aedtpworld.com/wikiworld/index.php?title=Special%3AAllPages">Special:AllPages</a> to see every page that exists.</li>
+<li>Browse the image gallery at <em>allimages/index.php</em> — see every uploaded picture, in a 7-column grid or a sortable detail table, and use the <strong>Copy link</strong> / <strong>Copy name</strong> buttons on any image.</li>
+<li>Browse the account directory at <em>allusers/index.php</em>.</li>
+<li>Download any page as a <strong>.txt</strong> file (the raw AWFLWIKITEXT) or as a self-contained <strong>.html</strong> file (styled the same as the live page, so it looks right even opened offline).</li>
+<li>Print any page (which also lets you &quot;print to PDF&quot; from the browser&#039;s print dialog).</li>
+</ul>
+<p>Visitors cannot create pages, edit pages, or upload images — those require an account.</p>
+<h2>Using AWFLWIKIWORLD as a Registered User</h2>
+<h3>Creating an account</h3>
+<p>Go to <a class="wiki-link new" href="https://aedtpworld.com/wikiworld/index.php?title=Special%3ARegister">Special:Register</a> and fill in a username, display name, email, password, and a security question and answer (used later for password recovery). Usernames must be 3–32 characters (letters, numbers, <em>-</em>, <em>_</em>, <em>.</em>), and the name <strong>admin</strong> is reserved. Once registered, log in at <a class="wiki-link new" href="https://aedtpworld.com/wikiworld/index.php?title=Special%3ALogin">Special:Login</a>.</p>
+<h3>Recovering a forgotten password</h3>
+<p>Open <em>users/recover.php</em>. You will be asked for your username, then your registration email and your security answer. If everything matches, you are immediately allowed to set a brand-new password — no email link required. Passwords and security answers are never stored in plain text; only their hashes are kept, so recovery always works by re-checking your answer, never by revealing the old password.</p>
+<h3>Creating and editing pages</h3>
+<p>To create a page, search for or navigate to its title and click <strong>Create</strong>. To edit an existing page, click <strong>Edit</strong>. Both open the same editor:</p>
+<ul>
+<li>A <strong>toolbar</strong> with <strong>B</strong> (bold), <strong>I</strong> (italic), <strong>U</strong> (underline), <strong>P</strong> (paragraph break), <strong>List</strong> (bulleted list) and <strong>Infobox</strong> (inserts a ready-made infobox template) — each wraps or inserts AWFLWIKITEXT around your current text selection.</li>
+<li>A <strong>source editor</strong>, the plain text box where the raw AWFLWIKITEXT lives.</li>
+<li>A <strong>visual editor (preview)</strong> tab, which sends your current text to the server and shows exactly how it will render, without saving anything yet.</li>
+</ul>
+<p>Click <strong>Save page</strong> to publish your changes immediately.</p>
+<p><strong>Note on protected pages:</strong> if an admin has protected a page, only an admin can edit it — the Edit link disappears (or is blocked server-side even if requested directly) for everyone else.</p>
+<h3>AWFLWIKITEXT — the markup language</h3>
+<p>AWFLWIKITEXT is a small, MediaWiki-inspired markup language. All of it can be typed by hand or inserted with the editor toolbar:</p>
+<ul>
+<li><strong>Bold</strong>: wrap text in three apostrophes, like <span class="awfl-nowiki">&#039;&#039;&#039;this&#039;&#039;&#039;</span>.</li>
+<li><em>Italic</em>: wrap text in two apostrophes, like <span class="awfl-nowiki">&#039;&#039;this&#039;&#039;</span>.</li>
+<li>Underline: wrap text in two underscores, like <span class="awfl-nowiki">__this__</span>.</li>
+<li>Headings: surround a line with one to six equals signs, like <span class="awfl-nowiki">= A Heading =</span> for level 1 or <span class="awfl-nowiki">== A Heading ==</span> for level 2 (more equals signs make progressively smaller headings, down to level 6).</li>
+<li>Bulleted list: start a line with an asterisk and a space, like <span class="awfl-nowiki">* An item</span>.</li>
+<li>Numbered list: start a line with a hash and a space, like <span class="awfl-nowiki"># An item</span>.</li>
+<li>Paragraphs: leave a blank line between blocks of text — each block becomes its own paragraph automatically.</li>
+<li>Internal link: <span class="awfl-nowiki">[[Page Name]]</span>, or <span class="awfl-nowiki">[[Page Name|words to display instead]]</span>. A link to a page that does not exist yet is still shown, in a different style, so you can click it to create that page.</li>
+<li>External link: <span class="awfl-nowiki">[https://aedtpworld.com/wikiworld//example.com link text]</span>.</li>
+<li>Bare images: any line that is just an image filename or URL ending in <em>.jpg</em>, <em>.jpeg</em>, <em>.png</em>, <em>.gif</em>, <em>.svg</em> or <em>.webp</em> is automatically rendered as a picture, shown at 250 pixels wide.</li>
+<li>Strikethrough: wrap text in two tildes, like <span class="awfl-nowiki">~~this~~</span> — for example, a <del>retired</del> feature name.</li>
+<li>Inline code: wrap text in backticks, like <span class="awfl-nowiki">`this`</span> — for example, <code>config.php</code>.</li>
+<li>Superscript: wrap text in two carets, like <span class="awfl-nowiki">^^this^^</span> — for example, E=mc<sup>2</sup>.</li>
+<li>Subscript: wrap text in two commas, like <span class="awfl-nowiki">,,this,,</span> — for example, H<sub>2</sub>O.</li>
+<li>Highlight: wrap text in two percent signs, like <span class="awfl-nowiki">%%this%%</span> — for example, a <mark>highlighted</mark> note.</li>
+<li>Blockquote: start a line with <span class="awfl-nowiki">&gt; </span> — for example, a quoted line stands apart from the surrounding paragraph.</li>
+<li>Horizontal rule: a line of four or more dashes on its own, like <span class="awfl-nowiki">----</span>, draws a divider between sections.</li>
+<li>Code block: wrap one or more lines in triple curly braces, like <span class="awfl-nowiki">{{{ your code here }}}</span>, to show preformatted, monospaced text.</li>
+</ul>
+<p>This article uses every one of these formats at least once. For the full reference, with a worked example of each format side by side with its raw syntax, see <a class="wiki-link" href="https://aedtpworld.com/wikiworld/index.php?title=AWFLWIKIWORLD/AWFLWIKITEXT">AWFLWIKITEXT</a>.</p>
+<h3>Infoboxes</h3>
+<p>An infobox is a small fact-table, usually shown floated at the top right of an article — exactly like the one at the top of this page. Write one like this:</p>
+<p><span class="awfl-nowiki">&lt;infobox&gt;
+|title=Subject Name|
+|image=some-picture.jpg|
+|caption=A short caption for the picture|
+|Born=1 January 2000|
+|Occupation=Example, Example|
+|anything=you like|
+&lt;/infobox&gt;</span></p>
+<p>Rules:</p>
+<ul>
+<li><strong>title</strong>, <strong>image</strong> and <strong>caption</strong> are each allowed only <strong>once</strong> per infobox, and always appear in that fixed order — title first, then the image, then the caption underneath it — no matter where you typed them in the block.</li>
+<li>Every other line becomes its own row: the part before the equals sign is shown in <strong>bold</strong> as the row&#039;s label, and the part after it is the value. You can add as many of these as you like, and they appear in the exact order you wrote them.</li>
+<li><strong>image</strong> turns any filename or link ending in an image extension into a real picture, shown at 250 pixels wide.</li>
+<li><strong>caption</strong> is shown under the picture and used as its alt text.</li>
+<li>Outside of an infobox, ordinary images placed directly in the page text are also shown at 250 pixels wide by default.</li>
+</ul>
+<h3>Uploading images</h3>
+<p>If the admin has enabled uploads, any logged-in user can add a picture at <a class="wiki-link new" href="https://aedtpworld.com/wikiworld/index.php?title=Special%3AUpload">Special:Upload</a>. Only <strong>.jpg</strong> and <strong>.png</strong> files are accepted. Once uploaded, an image can be referenced in any page (bare, or inside an infobox) just by its filename, for example <em><img src="images/mypicture.jpg" style="width:250px !important;height:auto;" alt=""></em>.</p>
+<h3>Downloading and printing</h3>
+<p>Every page offers:</p>
+<ul>
+<li><strong>Download .txt</strong> — the raw AWFLWIKITEXT, exactly as stored.</li>
+<li><strong>Download .html</strong> — a single, self-contained HTML file with the page&#039;s styling embedded in it, so it looks right even with no internet connection.</li>
+<li><strong>Print / PDF</strong> — opens your browser&#039;s print dialog, which on most browsers can also &quot;print&quot; straight to a PDF file.</li>
+</ul>
+<h2>Using AWFLWIKIWORLD as the Administrator</h2>
+<p>Log in with the <strong>$Username</strong> / <strong>$Password</strong> set in <em>config.php</em>. The admin account is not a row in <em>users/users.json</em> — it is defined directly in the configuration file and always has full control.</p>
+<h3>The Dashboard</h3>
+<p>Open the <strong>Dashboard</strong> link in the navigation bar (<em>dashboard/index.php</em>). It has four sections:</p>
+<ul>
+<li><strong>Skins</strong> — pick which skin is active site-wide, or create a brand-new skin by typing its CSS. The default <strong>vector2022</strong> skin can be selected but never edited or deleted; create a new skin instead if you want to change the look.</li>
+<li><strong>Colors</strong> — a small palette for the site&#039;s core colors (header background, header text, buttons, button text, wiki page text, and links). Pick a color visually or type a hex code directly; the change applies across the whole wiki immediately, on top of whichever skin is active.</li>
+<li><strong>Pages</strong> — a list of every page, with a delete button per page and a &quot;Delete all pages&quot; button. This is also where you can trigger the sitemap to regenerate on demand.</li>
+<li><strong>Images</strong> — every uploaded image, with a delete button per image.</li>
+</ul>
+<h3>Managing users</h3>
+<p>The <a class="wiki-link new" href="https://aedtpworld.com/wikiworld/index.php?title=Special%3AAllPages">All users</a> directory lists every account except the admin&#039;s own. Anyone can view it; only the admin sees extra controls per row to:</p>
+<ul>
+<li><strong>Rename</strong> a user&#039;s username.</li>
+<li><strong>Set</strong> a new password for a user directly — no need to know their old one, since passwords are stored hashed.</li>
+<li><strong>Remove</strong> a user entirely. Removing a user deletes their account record, but <strong>never</strong> deletes the pages or edits they made — those stay exactly as they are.</li>
+</ul>
+<p>The admin account can never remove itself. A regular user can remove their own account at any time (through the admin, since only the admin can perform removals) and, likewise, their past contributions are kept.</p>
+<h3>Managing images (All Images)</h3>
+<p><em>allimages/index.php</em> is visible to everyone, but the admin sees more:</p>
+<ul>
+<li><strong>Content view</strong> — a seven-column grid of thumbnails, each with <strong>Copy link</strong> and <strong>Copy file name</strong> buttons.</li>
+<li><strong>Detail view</strong> — a sortable table (click any column heading to sort ascending or descending) showing file name, extension, size, and upload date. Everyone gets these four columns; the admin gets a fifth column of checkboxes.</li>
+<li>As admin, above the table you get <strong>Delete selected</strong> (moves the chosen images to <em>images/trash/</em> rather than erasing them outright), <strong>Restore selected</strong> (only shown while viewing the &quot;Deleted&quot; tab, moves images back out of the trash), and <strong>Rename selected</strong> (type a new name into the box next to each checked row, then click to apply).</li>
+</ul>
+<h3>Page protection</h3>
+<p>Every page has a <strong>Protect</strong> button, visible only to the admin. Protecting a page means only the admin can edit it from then on — anyone else who tries (even by submitting the edit form directly) is blocked with a clear message. Clicking <strong>Unprotect</strong> opens editing back up to every logged-in user. Only the admin can protect or unprotect a page.</p>
+<h3>Admin edit history</h3>
+<p>Every time the <strong>admin</strong> saves a page, AWFLWIKIWORLD quietly records that exact content in <em>dashboard/history.json</em> — the page&#039;s name, its filename, its space (if any), the date, and the full text. This history holds only the <strong>one latest</strong> admin edit for each page; saving the same page again simply updates that one record rather than creating a new one.</p>
+<p>Open <strong>History</strong> in the navigation bar (admin only) to see every recorded page, sortable by any column. Two actions are available, both requiring on-screen confirmation:</p>
+<ul>
+<li><strong>Delete selected</strong> — permanently removes the chosen history record(s).</li>
+<li><strong>Restore selected</strong> — writes the saved content straight back to the live page, overwriting whatever is there now. This is most useful after a regular user&#039;s edit has changed a page the admin had previously written, since only admin saves are tracked — restoring brings the admin&#039;s version back.</li>
+</ul>
+<h3>Sitemap generation</h3>
+<p><em>sitemap/sitemap.php</em> builds a search-engine sitemap of every page. If the list of pages would make a single file larger than roughly 1&amp;nbsp;megabyte, it is automatically split into several files (<em>sitemap-1.xml</em>, <em>sitemap-2.xml</em>, and so on), and <em>sitemap.xml</em> is (re)written as an index that lists every split file. It also writes <em>robots.txt</em> pointing at that index. Because search engines crawl an index and then follow every entry inside it automatically, submitting the single <em>sitemap.xml</em> address once is enough — you never need to resubmit each split by hand.</p>
+<h2>Namespaces and Spaces</h2>
+<p>A page can live at the root (<em>namespaces/Pagename.txt</em>) or inside a named space (<em>namespaces/Space Name/Pagename.txt</em>), written and linked as <em>Space Name/Pagename</em>. Spaces are a simple way to group related pages, the same way a folder groups related files.</p>
+<p>Only an admin can create, rename, or delete a space, from the Dashboard&#039;s Namespaces screen. If you search for or link to a space that doesn&#039;t exist yet — this page itself lives in the space <strong>AWFLWIKIWORLD</strong>, at the page also named <strong>AWFLWIKIWORLD</strong>, so its full title is <span class="awfl-nowiki">AWFLWIKIWORLD/AWFLWIKIWORLD</span> — you are sent back to the wiki&#039;s home page instead of the space being created for you. This is true for every visitor, logged in or not: browsing to a nonexistent space never creates it. Once a space does exist, any logged-in user can create pages inside it.</p>
+<h2>Title Handling</h2>
+<p>Page titles can contain spaces when you type or link them — for example, <em>Buddy DML</em>. Behind the scenes, AWFLWIKIWORLD always <strong>stores and links</strong> that page using underscores instead of spaces (<em>Buddy_DML.txt</em>, linked as <em>Buddy_DML</em>), while still <strong>displaying</strong> the title with spaces wherever it is shown to a reader. This matches how MediaWiki itself handles titles, and it means links, downloads and file names never contain raw spaces.</p>
+<h2>Security Notes</h2>
+<ul>
+<li>Passwords and security-question answers are never stored as plain text — only their one-way hashes are kept in <em>users/users.json</em>.</li>
+<li>The supplied <em>.htaccess</em> blocks direct web access to every raw <em>.txt</em> and <em>.json</em> file, so page content and account records can never be downloaded straight off the server by guessing a URL — they can only be reached through the wiki&#039;s own pages.</li>
+<li>Only the admin can delete users, delete or protect pages, change the skin or colors, or manage images and history.</li>
+</ul>
+<hr>
+<h2>Frequently Asked Questions</h2>
+<ul>
+<li><strong>Do I need a database?</strong> No. Everything is stored in plain text and JSON files.</li>
+<li><strong>Can I move my wiki to another server?</strong> Yes — copy the whole folder, update <em>$Server</em> in <em>config.php</em> to the new address, and you are done.</li>
+<li><strong>Can I change how the wiki looks without touching PHP?</strong> Yes — skins are plain CSS files, created and switched from the Dashboard.</li>
+<li><strong>What happens to a user&#039;s pages if their account is removed?</strong> Nothing — page content is never tied to the account being present, so removing a user never deletes what they wrote.</li>
+<li><strong>What if I delete an image by mistake?</strong> As admin, open the &quot;Deleted&quot; tab in <a class="wiki-link new" href="https://aedtpworld.com/wikiworld/index.php?title=Special%3AAllPages">All Images</a> and restore it — deleted images go to a trash folder rather than being erased immediately.</li>
+<li><strong>Can a regular user undo someone else&#039;s edit?</strong> AWFLWIKIWORLD does not keep a version history for every user — only the admin&#039;s own latest edit to each page is tracked, in the Dashboard&#039;s History section, precisely so an admin can always restore their own last version.</li>
+</ul>
+<h2>See Also</h2>
+<ul>
+<li><a class="wiki-link new" href="https://aedtpworld.com/wikiworld/index.php?title=Special%3AAllPages">Special:AllPages</a></li>
+<li><a class="wiki-link new" href="https://aedtpworld.com/wikiworld/index.php?title=Special%3ARegister">Special:Register</a></li>
+<li><a class="wiki-link new" href="https://aedtpworld.com/wikiworld/index.php?title=Special%3ALogin">Special:Login</a></li>
+<li><a class="wiki-link new" href="https://aedtpworld.com/wikiworld/index.php?title=Special%3AUpload">Special:Upload</a></li>
+<li><a class="wiki-link" href="https://aedtpworld.com/wikiworld/index.php?title=AWFLWIKIWORLD/AWFLWIKITEXT">AWFLWIKITEXT formatting reference</a></li>
+</ul></article>
+</main></div></div>
+</body>
+</html>
